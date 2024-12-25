@@ -1,0 +1,49 @@
+@use "../foundation" as *;
+
+.scrollTopButton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: prem(-72);
+  bottom: prem(163);
+  width: prem(72);
+  height: prem(72);
+  background: $color-blue;
+  line-height: prem(72);
+  border-radius: prem(4);
+  cursor: pointer;
+  transition: right 0.4s ease-in-out;
+  z-index: 899;
+
+  /* 非表示時 */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scrollTopButton.is-active {
+  right: prem(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTopButton img {
+  width: 68%;
+  height: auto;
+}
+
+// .news__list {
+//   display: none;
+// }
+// .news__list.is-current {
+//   display: none;
+// }
+
+.js-tab-content {
+}
+
+.news__card {
+}
+
+.news-list__item-title {
+}

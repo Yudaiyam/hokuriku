@@ -1,0 +1,83 @@
+@use "sass:math";
+
+// ブレイクポイントの設定
+// ＊＊＊＊＊SP・PCファーストについて、この設定を変更します＊＊＊＊＊
+$break-flg: 1 !default; //0:SPファースト、1：PCファースト
+
+$breakpoints: null;
+@if $break-flg == 0 {
+  $breakpoints: (
+    "sm": "screen and (min-width: 400px)",
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 1000px)",
+    "xl": "screen and (min-width: 1200px)",
+  );
+} @else {
+  // ブレイクポイントの設定
+  $breakpoints: (
+    "sm": "screen and (max-width: 399px)",
+    "md": "screen and (max-width: 767px)",
+    "lg": "screen and (max-width: 999px)",
+    "xl": "screen and (max-width: 1199px)",
+  );
+}
+
+// inner
+$inner: 1250px;
+
+// 余白
+$padding-pc: 25px; // PC用余白設定
+$padding-sp: 20px; // スマホ用余白設定
+
+// フォント
+$font-family-second: "BIZ UDPMincho", serif; // ベースフォント設定
+$font-family-base: "BIZ UDPGothic", sans-serif;
+$font-family-third: "Oswald", sans-serif;
+
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+
+// ベースフォントサイズ
+$base-font-size: 16px;
+
+// Color
+$color-black: #2f2f2f;
+$color-white: #ffffff;
+$color-gray01: #f9f9f9;
+$color-gray02: #f5f5f5;
+$color-gray03: #eff4f7;
+$color-gray04: #dadee2;
+$color-gray05: #aebbc2;
+$color-gray05: #999999;
+$color-gray06: #fbfbfb;
+$color-gray07: #dddddd;
+$color-gray08: #aeb8c2;
+
+$color-blue: #77bcc2;
+$color-blue2: #2a90a9;
+$color-blue3: #12929d;
+$color-blue4: #f2fcff;
+$color-blue5: #65c0c8;
+$color-blue6: #a7dce0;
+$color-blue7: #87b2bd;
+$color-blue8: #f2fcff;
+$color-blue9: #f0fafb;
+$color-blue10: #fafeff;
+$color-blue11: #53bdc6;
+$color-blue12: #f4f9fa;
+$color-blue13: #45b4bd;
+$color-blue13: #f2fafc;
+$color-blue14: #f0fafb;
+$color-blue15: #45b4bd;
+$color-blue16: #4894a7;
+$color-orange: #f2950b;
+$color-green: #3dc176;
+
+$color-1: #f4d45f;
+$color-2: #f59160;
+$color-3: #6091f5;
+$color-4: #60c5f5;
+$color-5: #80f560;

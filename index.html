@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>株式会社北陸化成工業所</title>
+    <meta name="description" content="トップページの説明" />
+    <meta name="keywords" content="キーワード" />
+    <!-- ogp -->
+    <meta property="og:title" content="株式会社北陸化成工業所" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="サイトのドメイン" />
+    <meta property="og:image" content="OGP IMAGE" />
+    <meta property="og:site_name" content="サイトのドメイン" />
+    <meta property="og:description" content="トップページの説明" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="./images/common/logo01.svg" alt="株式会社北陸化成工業所のロゴ" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">ホーム</a>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>会社案内</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">北陸化成の強みについて</p>
+                  </a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">SDGsの取組み</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>事業/製品紹介</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">化成品事業</p>
+                  </a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">鋳材事業</p>
+                  </a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">分析事業</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>採用情報</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">北陸化成工業所を深く知る</p>
+                  </a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#">
+                    <p class="header__nav-modal-item-text">先輩社員の声</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header__nav-item header__nav-item--contact">
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <a href="#">私たちについて<span>about</span></a>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">会社案内</p>
+                <div class="header__drawer-accordion-list-wrap">
+                  <ul class="header__drawer-accordion-list">
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">北陸化成工業所の強みについて</p>
+                      </a>
+                    </li>
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text"><span class="md-upper">sdg</span>sの取り組み</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">事業/製品紹介</p>
+                <div class="header__drawer-accordion-list-wrap">
+                  <ul class="header__drawer-accordion-list">
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">化成品事業</p>
+                      </a>
+                    </li>
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">鋳材事業</p>
+                      </a>
+                    </li>
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">分析事業</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">採用情報</p>
+                <div class="header__drawer-accordion-list-wrap">
+                  <ul class="header__drawer-accordion-list">
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">北陸化成工業所を深く知る</p>
+                      </a>
+                    </li>
+                    <li class="header__drawer-accordion-item">
+                      <a href="#">
+                        <p class="header__drawer-accordion-item-text">先輩社員の声</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">新着情報<span>news</span></a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">お問い合わせ<span>contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="scrollTopButton">
+        <img src="/images/scroll-btn.svg" />
+      </div>
+      <section class="mv">
+        <div class="mv__inner">
+          <h2 class="mv__title-wrap">
+            <p class="mv__title"><span class="md_large md-primary">化学</span>の<span class="md_large">力</span>で</p>
+            <p class="mv__title"><span class="md_large">持続</span>できる<span class="md_large">未来</span>を。</p>
+          </h2>
+          <div class="mv__img">
+            <img src="./images/mv3.jpg" alt="省略" />
+          </div>
+          <div class="mv__btn">
+            <a href="#">
+              <img src="/images/recruit-btn.svg" />
+            </a>
+          </div>
+
+          <div class="mv__scroll" id="top">
+            <p class="mv-scroll__text">scroll</p>
+            <i class="fa fa-angle-down animated bounce"></i>
+          </div>
+        </div>
+
+        <div class="hidden-div">
+          <div class="hidden-div__inner">
+            <div class="hidden-div__map">
+              <img src="/images/mv-map.svg" alt="富山県の地図と高岡市の位置" />
+            </div>
+            <div class="hidden-div__text">
+              1949年に工業薬品メーカーとして<br class="md-none" />
+              スタートした「北陸化成工業所」は、<br />
+              地域社会との調和を考え<br class="md-none" />
+              地域と共に成長していくことを目指しながら、<br class="md-none" />
+              事業領域を広げてきました。<br />
+              地域から発生する副生物を独自の技術で有効活用し、<br />
+              お客様の求める商品を生み出すことで、<br />
+              循環型社会の実現に貢献し続ける 富山県高岡市の化学メーカーです。
+            </div>
+          </div>
+        </div>
+        <div class="mv__polkadots polkadots">
+          <img src="./images/polkadots.svg" />
+        </div>
+
+        <div class="mv__watersplash">
+          <img src="./images/watersplash.svg" />
+        </div>
+        <div class="mv__watersplash-sub">
+          <img src="./images/watersplash.svg" />
+        </div>
+      </section>
+      <section class="news layout-news">
+        <div class="news__inner inner">
+          <div class="news_heading">
+            <h3 class="news__title title">新着情報</h3>
+            <div class="news__nav-wrap">
+              <nav class="news__nav news-nav">
+                <ul class="news-nav__list">
+                  <li class="news-nav__list-item news-nav__list-item--selected">
+                    <a href="">すべて</a>
+                  </li>
+                  <li class="news-nav__list-item">
+                    <a href="">お知らせ</a>
+                  </li>
+                  <li class="news-nav__list-item">
+                    <a href="">コラム</a>
+                  </li>
+                  <li class="news-nav__list-item">
+                    <a href="">採用情報</a>
+                  </li>
+                  <li class="news-nav__list-item">
+                    <a href="">その他</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="news__btn">
+                <a class="btn" href="#">
+                  <span class="btn__text">一覧を見る</span>
+                  <span class="btn__circle"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="news__list news-list">
+            <li class="news-list__item">
+              <a href="#">
+                <div class="news-list__item-img">
+                  <img src="./images/news01.jpg" alt="省略" />
+                </div>
+                <div class="news-list__item-content">
+                  <div class="news-list__item-meta">
+                    <time class="news-list__item-date" datetime="2024-05-23">2024.05.23</time>
+                    <p class="news-list__item-category">お知らせ</p>
+                  </div>
+                  <p class="news-list__item-title">とやま健康企業宣言STEP1の認定を受けました。</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="#">
+                <div class="news-list__item-img">
+                  <img src="./images/news02.jpg" alt="省略" />
+                </div>
+                <div class="news-list__item-content">
+                  <div class="news-list__item-meta">
+                    <time class="news-list__item-date" datetime="2024-04-21">2024.04.21</time>
+                    <p class="news-list__item-category">お知らせ</p>
+                  </div>
+                  <p class="news-list__item-title">「令和６年能登半島地震」による影響につきまして</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="#">
+                <div class="news-list__item-img">
+                  <img src="./images/news03.jpg" alt="省略" />
+                </div>
+                <div class="news-list__item-content">
+                  <div class="news-list__item-meta">
+                    <time class="news-list__item-date" datetime="2024-03-13">2024.03.13</time>
+                    <p class="news-list__item-category">お知らせ</p>
+                  </div>
+                  <p class="news-list__item-title">シモダ産業株式会社との業務提携のお知らせ</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about layout-about">
+        <div class="about__inner inner inner--lg">
+          <div class="about__heading">
+            <h3 class="about__title title title--vertically">北陸化成工業所を知る</h3>
+            <p class="about__text">私たちは、「化学の力で持続できる未来を」目指し、地場で発生する廃棄物を資源へと生まれ変わらせるリサイクル技術で、地域を支えるサステナブル企業です。</p>
+          </div>
+          <div class="about__items">
+            <div class="about__item about__item--large">
+              <a href="#">
+                <picture>
+                  <source srcset="/images/about01-sp.jpg" media="(max-width: 767px)" />
+                  <img src="/images/about1-pc.jpg" alt="北陸化成工業所の強み" />
+                </picture>
+
+                <span class="contact-option__link contact-option__link--about">
+                  北陸化成工業所の強み
+                  <div class="circle"></div>
+                </span>
+              </a>
+            </div>
+
+            <div class="about__item-wrap">
+              <div class="about__item">
+                <a href="#"
+                  ><img src="./images/about02.jpg" alt="sdgsの取り組み" class="about__image" loading="lazy" />
+                  <span class="contact-option__link contact-option__link--about">
+                    SDGsの取り組み
+                    <div class="circle"></div> </span
+                ></a>
+              </div>
+
+              <div class="about__item">
+                <a href="#"
+                  ><img src="./images/about03.jpg" alt="会社案内" class="about__image" loading="lazy" />
+                  <span class="contact-option__link contact-option__link--about">
+                    会社案内
+                    <div class="circle"></div> </span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__polkadots polkadots">
+          <img src="./images/polkadots.svg" />
+        </div>
+        <div class="about__watersplash">
+          <img src="./images/watersplash.svg" />
+        </div>
+      </section>
+
+      <section class="group layout-group">
+        <h3 class="group__title">北陸化成工業所グループ</h3>
+        <p class="group__text">当社の製品は暮らしには欠かせない、とても身近なところで色々と使われています。</p>
+        <div class="group__wrap js-scale-change">
+          <span class="group01 js-modal-open" data-target="1">
+            <img src="/images/group01.svg" alt="鋳物メーカー" />
+          </span>
+          <span class="group02 js-modal-open" data-target="2">
+            <img src="/images/group02.svg" alt="工場排水処理施設" />
+          </span>
+          <span class="group03 js-modal-open" data-target="3">
+            <img src="/images/group03.svg" alt="自動車メーカー" />
+          </span>
+          <span class="group04 js-modal-open" data-target="4">
+            <img src="/images/group04.svg" alt="浄水場" />
+          </span>
+          <span class="group05 js-modal-open" data-target="5">
+            <img src="/images/group05.svg" alt="化粧品メーカー" />
+          </span>
+          <span class="group06 js-modal-open" data-target="6">
+            <img src="/images/group06.svg" alt="火力発電所" />
+          </span>
+          <span class="group07 js-modal-open" data-target="7">
+            <img src="/images/group07.svg" alt="トンネル工事" />
+          </span>
+          <span class="group08 js-modal-open" data-target="8">
+            <img src="/images/group08.svg" alt="家" />
+          </span>
+          <span class="group09 js-modal-open" data-target="9">
+            <img src="/images/group09.svg" alt="鋳物メーカー" />
+          </span>
+          <span class="group10 js-modal-open" data-target="10">
+            <img src="/images/group10.svg" alt="鋳物メーカー" />
+          </span>
+          <span class="group11 js-modal-open" data-target="11">
+            <img src="/images/group11.svg" alt="鋳物メーカー" />
+          </span>
+          <span class="group12 js-modal-open" data-target="12">
+            <img src="/images/group12.svg" alt="鋳物メーカー" />
+          </span>
+          <span class="group13 js-modal-open" data-target="13">
+            <img src="/images/group13.svg" alt="鋳物メーカー" />
+          </span>
+        </div>
+
+        <div class="modal js-modal" data-id="1">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル1の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="2">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル2の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="3">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル3の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="4">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">ポリ塩化アルミニウム</p>
+              <p class="modal__text">従来の凝集剤に代わる画期的な多能性無機高分子凝集剤として、経済性、作業性、凝集効果 および 各種原排水処理に対する幅広い適応性において、卓越した性能を有しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="5">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル5の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="6">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル4の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="7">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル7の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="8">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル8の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="9">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル9の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="10">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">硫酸バンド</p>
+              <p class="modal__text">主に 工場向けの凝集剤として 排水処理に使用され、高分子凝集剤に比べ 値段が安く、ほとんどの懸濁物、浮遊物に対して有効で、毒性がないため 大量に使用することができます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="11">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル11の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="12">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル12の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal" data-id="13">
+          <div class="modal__body">
+            <span class="modal__close-button js-modal__close">閉じる</span>
+            <div class="modal__content">
+              <p class="modal__title">製品名</p>
+              <p class="modal__text">モーダル13の内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="group__watersplash-sub">
+          <img src="./images/watersplash.svg" />
+        </div>
+      </section>
+
+      <section class="works layout-works">
+        <div class="works__inner inner inner--lg">
+          <h3 class="works__title title title--vertically">事業・製品紹介</h3>
+          <div class="works__container">
+            <div class="works__heading">
+              <p class="works__text">
+                私たちは、地元・北陸地域から発生する副生物を独自の技術で有効活用し、<br />
+                お客様の求める商品を生み出すことで、循環型社会の実現に貢献し続けます。
+              </p>
+              <div class="news__btn news__btn--works">
+                <a class="btn" href="#">
+                  <span class="btn__text">詳しく見る</span>
+                  <span class="btn__circle"></span>
+                </a>
+              </div>
+            </div>
+
+            <ul class="works__list works-list">
+              <li class="works-list__item">
+                <div class="works-list__item-img">
+                  <img src="./images/works01.jpg" alt="省略" />
+                </div>
+                <div class="works-list__item-content">
+                  <p class="works-list__item-title">化成品事業</p>
+                  <p class="works-list__item-text">私たちの水処理技術は、暮らしに役立ち、自然と共存してきました。精選された原料と徹底した品質管理のもとで製造・出荷しています。</p>
+                  <a class="contact-option__link contact-option__link--works">
+                    詳しく見る
+                    <div class="circle"></div>
+                  </a>
+                </div>
+              </li>
+              <li class="works-list__item">
+                <div class="works-list__item-img">
+                  <img src="./images/works02.jpg" alt="省略" />
+                </div>
+                <div class="works-list__item-content">
+                  <p class="works-list__item-title">鋳材事業</p>
+                  <p class="works-list__item-text">鋳物の製造に欠かせない鋳物砂や中子を、地域の鋳物メーカーへ供給しています。また、使用済みの鋳物砂を独自の技術で再生しています。</p>
+                  <a class="contact-option__link contact-option__link--works">
+                    詳しく見る
+                    <div class="circle"></div>
+                  </a>
+                </div>
+              </li>
+              <li class="works-list__item">
+                <div class="works-list__item-img">
+                  <img src="./images/works03.jpg" alt="省略" />
+                </div>
+                <div class="works-list__item-content">
+                  <p class="works-list__item-title">分析事業</p>
+                  <p class="works-list__item-text">富山県知事登録を行っている環境計量証明事業所として、当社の製品をお使い頂くお客様の依頼分析や測定もお請けしています。</p>
+                  <a class="contact-option__link contact-option__link--works">
+                    詳しく見る
+                    <div class="circle"></div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="works__polkadots polkadots">
+          <img src="./images/polkadots.svg" />
+        </div>
+        <div class="works__watersplash">
+          <img src="./images/watersplash.svg" />
+        </div>
+        <div class="works__watersplash-sub">
+          <img src="./images/watersplash.svg" />
+        </div>
+      </section>
+
+      <div class="recruit layout-recruit">
+        <ul class="recruit__list">
+          <li class="recruit__item"></li>
+          <li class="recruit__item">
+            <div class="recruit__item-content">
+              <p class="recruit__item-title">
+                北陸化成工業所で<br />
+                一緒に働きませんか？
+              </p>
+              <p class="recruit__item-text">当社の働く環境や先輩社員のリアルな声などご紹介します。</p>
+              <div class="news__btn news__btn--recruit">
+                <a class="btn" href="#">
+                  <span class="btn__text">採用情報を見る</span>
+                  <span class="btn__circle"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="recruit__polkadots polkadots">
+          <img src="./images/polkadots.svg" />
+        </div>
+      </div>
+
+      <section class="contact layout-contact">
+        <div class="contact__inner inner inner--md">
+          <div class="contact__wrap">
+            <h2 class="contact__title title">お問い合わせ</h2>
+            <p class="contact__description">「ちょっと相談したい」「依頼が可能か聞いてみたい」など<br />少しでも気になることがございましたら<br />何でもお気軽にお問い合わせください。</p>
+          </div>
+          <div class="circle-container">
+            <div class="circle-set">
+              <img src="./images/circle.svg" class="circle-image" />
+              <div class="centered-content">
+                <p class="contact-option__title">Webからの<br />お問い合わせ</p>
+                <div class="contact-option__link">
+                  入力フォームへ
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="circle-set secondary-set">
+              <img src="./images/circle.svg" class="circle-image" />
+              <div class="centered-content">
+                <p class="contact-option__title">お電話での<br />お問い合わせ</p>
+                <a class="contact-option__link contact-option__link--tel" href="tel:0766-22-2155"><span>tel.</span>0766-22-2155</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__watersplash">
+          <img src="./images/watersplash.svg" />
+        </div>
+        <div class="contact__watersplash-sub">
+          <img src="./images/watersplash.svg" />
+        </div>
+      </section>
+
+      <div class="wave">
+        <canvas id="waveCanvas"> </canvas>
+      </div>
+
+      <div class="company-logos">
+        <div class="company-logos__inner">
+          <div class="company-logos__items">
+            <div class="company-logos__item">
+              <a href="#">
+                <img src="./images/link01.svg" alt="スヅチロ化学工業株式会社のロゴ" loading="lazy" />
+              </a>
+            </div>
+            <div class="company-logos__item">
+              <a href="#">
+                <img src="./images/link02.svg" alt="ケミプラス株式会社のロゴ" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer layout-footer">
+      <div class="footer__inner inner inner--lg">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="./images/common/logo02.svg" alt="株式会社北陸化成工業所のロゴ" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">
+                <a href="#">会社案内</a>
+              </p>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a href="#">北陸化成工業所の強みについて</a></li>
+                <li class="footer__nav-list-item">
+                  <a href="#"><span class="md-upper md-fw">sdg</span>sの取組み</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">
+                <a href="">事業/製品紹介</a>
+              </p>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a href="#">化成品事業</a></li>
+                <li class="footer__nav-list-item"><a href="#">鋳材事業</a></li>
+                <li class="footer__nav-list-item"><a href="#">分析事業</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">
+                <a href="#">採用情報</a>
+              </p>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a href="#">北陸化成工業所を深く知る</a></li>
+                <li class="footer__nav-list-item"><a href="#">先輩社員の声</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">
+                <a href="#">新着情報</a>
+              </p>
+              <p class="footer__nav-title">
+                <a href="#">お問い合わせ</a>
+              </p>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__policy">
+            <li class="footer__policy-item"><a href="#">利用規約</a></li>
+            <li class="footer__policy-item"><a href="#">プライバシーポリシー</a></li>
+          </ul>
+          <p class="footer__copyright">copyright&copy;2024&nbsp;<span class="md-upper">hokuriku&nbsp;kasei&nbsp;industry&nbsp;co.,</span><span class="md-upper">ltd.</span>&nbsp;all&nbsp;rights&nbsp;reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

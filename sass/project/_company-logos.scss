@@ -1,0 +1,40 @@
+@use "../foundation" as *;
+
+.company-logos {
+  background-color: $color-blue4;
+  margin-top: -47px;
+  padding-top: 0;
+  padding-bottom: 84px;
+
+  @include mq("md") {
+    margin-top: 38px;
+    padding-bottom: 56px;
+  }
+}
+
+.company-logos__inner {
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+}
+
+.company-logos__items {
+  display: flex;
+  justify-content: center;
+  gap: prem(46);
+
+  @include mq("md") {
+    gap: 13px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.company-logos__item {
+  padding-top: prem(3);
+}
+
+.company-logos__item img {
+  aspect-ratio: 240/52;
+  object-fit: cover;
+  height: auto;
+}

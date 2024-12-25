@@ -1,0 +1,51 @@
+@use "../foundation" as *;
+
+.title {
+  font-size: prem(32);
+  font-family: $font-family-second;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  font-weight: $regular;
+  padding-left: prem(28);
+  position: relative;
+
+  @include mq("md") {
+    font-size: 28px;
+  }
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  width: prem(12);
+  height: prem(12);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-blue;
+  border-radius: 50%;
+}
+
+.title.title--vertically {
+  writing-mode: vertical-rl;
+  padding-left: 0;
+  padding-top: prem(32);
+
+  @include mq("md") {
+    // writing-mode: horizontal-tb;
+    padding-left: prem(0);
+    padding-top: prem(32);
+  }
+}
+
+.title.title--vertically::before {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+
+  @include mq("md") {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}

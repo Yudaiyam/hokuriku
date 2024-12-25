@@ -1,0 +1,53 @@
+@use "../foundation" as *;
+
+.heading {
+  padding-top: prem(242);
+
+  position: relative;
+  @include mq("md") {
+    padding-top: prem(110);
+  }
+}
+
+.heading__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @include mq("md") {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+.heading__inner.inner {
+  max-width: prem(1248);
+  @include mq("md") {
+    // max-width: prem(369);
+  }
+}
+
+.heading__title {
+  font-family: $font-family-second;
+  font-size: prem(40);
+  font-weight: $regular;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  @include mq("md") {
+    font-size: prem(28);
+    margin-top: prem(0);
+  }
+}
+
+.heading__title-sub {
+  font-size: prem(16);
+  font-family: $font-family-base;
+  color: $color-blue3;
+  display: block;
+  margin-top: prem(20);
+  text-transform: capitalize;
+  @include mq("md") {
+    padding-left: prem(2);
+    margin-top: prem(16);
+    font-size: prem(12.1);
+  }
+}

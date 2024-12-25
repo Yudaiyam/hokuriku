@@ -1,0 +1,20 @@
+@use "../foundation" as *;
+
+.layout-page404 {
+  margin-top: prem(160);
+}
+
+.page404__text {
+  font-size: prem(15);
+  font-weight: $regular;
+  letter-spacing: 0em;
+  line-height: 2;
+}
+
+.page404__btn {
+  margin-top: prem(48);
+}
+
+.page404__btn .button-text {
+  margin-right: prem(96);
+}

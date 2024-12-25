@@ -1,0 +1,232 @@
+@use "../foundation" as *;
+
+.works {
+  padding-top: 164px;
+  padding-bottom: 157px;
+  position: relative;
+  overflow: hidden;
+
+  @include mq("md") {
+    padding-top: 98px;
+    padding-bottom: 113px;
+  }
+}
+
+.works__inner {
+  display: flex;
+  gap: prem(56);
+
+  @include mq("md") {
+    flex-direction: column;
+  }
+}
+
+.works__inner.inner {
+  @include mq("md") {
+    align-items: center;
+    gap: 51px;
+  }
+}
+
+.works__title {
+  letter-spacing: 0.2em;
+
+  @include mq("md") {
+    letter-spacing: 0.24em;
+  }
+}
+
+.works__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: prem(71);
+
+  @include mq("md") {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .button-container {
+    @include mq("md") {
+      width: 258px;
+      padding: 21px 19px 16px 26px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.works__text {
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  @include mq("md") {
+    letter-spacing: 0.03em;
+    padding: 0 3px;
+  }
+}
+
+.works-list {
+  margin-top: 36px;
+  display: grid;
+  gap: prem(18);
+  grid-template-columns: repeat(3, 1fr);
+
+  @include mq(md) {
+    margin-top: 39px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 42px;
+  }
+}
+
+.works-list__item {
+  display: block;
+  height: 100%;
+}
+
+.works-list__item+.works-list__item {
+  @include mq("md") {
+    // margin-top: prem(48);
+  }
+}
+
+.works-list__item-img {
+  width: 100%;
+  border-radius: prem(7);
+  overflow: hidden;
+}
+
+.works-list__item-img img {
+  width: 100%;
+  aspect-ratio: 358/358;
+  object-fit: cover;
+  transition: 0.3s transform;
+}
+
+.works-list__item-content {
+  margin-top: prem(24);
+  padding-right: prem(5);
+  padding-left: prem(5);
+}
+
+.works-list__item-title {
+  font-size: prem(24);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  font-family: $font-family-second;
+  border-bottom: 1px solid $color-gray04;
+  padding-bottom: prem(16);
+
+  @include mq(md) {
+    font-size: prem(20);
+    text-align: center;
+
+  }
+}
+
+.works-list__item-text {
+  margin-top: prem(16);
+  font-size: prem(16);
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  @include mq(md) {
+    margin-top: prem(15);
+    font-size: 16px;
+  }
+}
+
+.contact-option__link.contact-option__link--works {
+  width: 130px;
+
+  @include mq("md") {
+    margin-inline: auto;
+  }
+}
+
+.works-list__item:hover .works-list__item-img img {
+  transform: scale(1.1);
+  transition: 0.3s transform;
+}
+
+.works-list__item:hover .works-list__item-text,
+.works-list__item:hover .works-list__item-title {
+  opacity: 0.7;
+  transition: 0.3s transform, 0.3s opacity;
+}
+
+.works-list__btn {
+  display: flex;
+  align-items: center;
+  margin-top: prem(16);
+
+  @include mq("md") {
+    margin-inline: auto;
+    justify-content: center;
+  }
+}
+
+.works-list__btn .button-text {
+  margin-right: prem(16);
+}
+
+.works-list__item:hover a {
+  opacity: 1;
+}
+
+.icon {
+  position: absolute;
+  width: prem(79);
+  height: prem(79);
+  // position: absolute;
+  background-image: url("../images/group-icon-plain.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  left: 10%;
+}
+
+.icon:hover .icon {
+  scale: 1.1;
+}
+
+.icon::before {}
+
+.icon-text {
+  position: relative;
+  width: prem(52);
+  height: prem(26);
+}
+
+.icon-text::after,
+.icon-text::before {
+  content: "土木工事";
+  position: absolute;
+  display: inline-block;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/Arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  font-size: prem(12);
+  font-weight: $bold;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  color: $color-blue3;
+}
+
+.icon-text::before {
+  transform: translate(100%, -50%);
+}
+
+.works-list__item a img {
+  border-radius: 8px;
+}

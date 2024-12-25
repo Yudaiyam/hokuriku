@@ -1,0 +1,315 @@
+@use "../foundation" as *;
+
+.bg-water3,
+.bg-water2,
+.bg-water {
+  position: absolute;
+  background-image: url("../images/bg-water.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 298px;
+  height: 224px;
+}
+
+.bg-ball {
+  position: absolute;
+  background-image: url("../images/bg-ball.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 217px;
+  height: 217px;
+}
+
+.bg-wave {
+  position: absolute;
+  background-image: url("../images/bg-strength01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 953px;
+  height: 465px;
+}
+
+.products-heading .bg-water {
+  top: 13%;
+  left: -6%;
+
+  @include mq("md") {
+    top: 33%;
+    left: -12%;
+    height: 24%;
+    width: 38%;
+  }
+}
+
+.products-heading .bg-water2 {
+  top: 57%;
+  right: -11%;
+
+  @include mq("md") {
+    top: 60%;
+    right: -18%;
+    height: 36%;
+    width: 38%;
+  }
+}
+
+.mv__polkadots {
+  position: absolute;
+  left: -14%;
+  bottom: -16%;
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.works__polkadots {
+  position: absolute;
+  left: -11%;
+  top: -11%;
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.about__polkadots {
+  position: absolute;
+  right: -9%;
+  top: -13%;
+  width: 16%;
+
+  @include mq("md") {
+    position: absolute;
+    right: -23%;
+    top: 15px;
+    width: 42%;
+  }
+}
+
+.contact__polkadots {
+  position: absolute;
+  left: -11%;
+  top: -21%;
+  z-index: -1;
+
+  @include mq("md") {
+    width: 50%;
+    top: -12%;
+    left: -24%;
+  }
+}
+
+.contact.contact.contact--reverse .contact__polkadots {
+  position: absolute;
+  left: -11%;
+  top: -24%;
+  z-index: 1;
+
+  @include mq("md") {
+    left: -18%;
+    top: -14%;
+  }
+}
+
+.division-single-head__polkadots {
+  position: absolute;
+  left: -10%;
+  bottom: -8%;
+
+  @include mq("md") {
+    width: 70%;
+    left: -58%;
+    bottom: -47%;
+  }
+}
+
+.polkadots {
+  overflow: hidden;
+}
+
+.mv__watersplash {
+  position: absolute;
+  left: 17%;
+  top: 0;
+  transform: rotate(131deg);
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.mv__watersplash-sub {
+  position: absolute;
+  left: -12%;
+  bottom: -25%;
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.about__watersplash {
+  position: absolute;
+  right: -12%;
+  top: -5%;
+  transform: rotate(162deg);
+  width: 27%;
+
+  @include mq("md") {
+    position: absolute;
+    right: -8%;
+    top: 5%;
+    transform: rotate(102deg);
+    width: 50%;
+  }
+}
+
+.group__watersplash-sub {
+  position: absolute;
+  left: -15%;
+  top: -32%;
+  width: 26%;
+
+  @include mq("md") {
+    width: 70%;
+  }
+}
+
+.works__watersplash {
+  position: absolute;
+  left: -16%;
+  top: -4%;
+  transform: rotate(36deg);
+}
+
+.works__watersplash-sub {
+  position: absolute;
+  right: -13%;
+  bottom: -9%;
+  z-index: -1;
+
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.contact__watersplash {
+  position: absolute;
+  left: -16%;
+  bottom: 56%;
+  transform: rotate(11deg);
+  z-index: -1;
+
+  @include mq("md") {
+    width: 60%;
+    bottom: 85%;
+    left: -32%;
+  }
+}
+
+.contact.contact.contact--reverse .contact__watersplash {
+  position: absolute;
+  left: -18%;
+  top: -17%;
+  transform: rotate(11deg);
+
+  @include mq("md") {
+    width: 60%;
+    top: -9%;
+  }
+}
+
+.contact__watersplash-sub {
+  position: absolute;
+  right: -12%;
+  bottom: -43%;
+  z-index: -1;
+
+  @include mq("md") {
+    width: 50%;
+    bottom: 2%;
+  }
+}
+
+.contact.contact--reverse .contact__watersplash-sub {
+  z-index: 1;
+  position: absolute;
+  right: -14%;
+  bottom: -16%;
+
+  @include mq("md") {
+    width: 50%;
+    bottom: -7%;
+    left: 74%;
+  }
+}
+
+.division-single-head__watersplash {
+  position: absolute;
+  left: -19%;
+  bottom: -16%;
+
+  @include mq("md") {
+    width: 50%;
+    bottom: -36%;
+    left: -19%;
+  }
+}
+
+.heading__watersplash {
+  position: absolute;
+  left: -12%;
+  bottom: -9%;
+
+  @include mq("md") {
+    width: 50%;
+    bottom: 27%;
+    left: -23%;
+  }
+}
+
+.heading__watersplash-sub {
+  position: absolute;
+  right: -16%;
+  bottom: -31%;
+
+  @include mq("md") {
+    width: 50%;
+    bottom: -17%;
+    right: -20%;
+  }
+}
+
+.customize__watersplash {
+  position: absolute;
+  right: -16%;
+  top: -35%;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.bg-about {
+  position: absolute;
+  background-image: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1435px;
+  height: 698px;
+  top: 22%;
+  left: -6%;
+
+  @include mq("md") {
+    width: 1170px;
+    height: 564px;
+    top: 36%;
+    left: -457px;
+    transform: rotate(-90deg);
+  }
+}

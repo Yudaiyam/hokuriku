@@ -1,0 +1,264 @@
+@use "../foundation" as *;
+
+.contact {
+  position: relative;
+  padding-top: prem(99);
+
+  @include mq("md") {
+    padding-top: 119px;
+    padding-bottom: prem(80);
+    min-height: 812px;
+  }
+}
+
+.contact.contact--reverse {
+  background-color: $color-blue10;
+  overflow: visible;
+  padding-bottom: prem(100);
+}
+
+.contact__inner {
+  display: flex;
+  align-items: center;
+  gap: prem(58);
+
+  @include mq("md") {
+    flex-direction: column;
+    gap: prem(24);
+  }
+}
+
+.contact__wrap {
+  margin-top: 0px;
+}
+
+.contact__description {
+  margin-top: prem(23);
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-size: prem(16);
+  font-feature-settings: "palt";
+}
+
+.contact__options {
+  width: prem(616);
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.contact-option {
+  max-width: prem(340);
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+
+.contact-option__img {
+  position: relative;
+  border-radius: 50%;
+}
+
+.contact-option__contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  max-width: prem(340);
+  max-height: prem(340);
+  width: 100%;
+  text-align: center;
+}
+
+.contact-option__title {
+  font-size: prem(20);
+  font-family: $font-family-second;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+
+  @include mq("md") {
+    font-size: 18px;
+  }
+}
+
+.contact-option__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: prem(16);
+  font-size: prem(15);
+  letter-spacing: 0.04em;
+  line-height: 1;
+
+  @include mq("md") {
+    margin-top: 9px;
+  }
+}
+
+.contact-option__link.contact-option__link--tel {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: $color-blue;
+
+  @include mq("md") {
+    font-size: 15px;
+  }
+}
+
+.contact-option__link.contact-option__link--tel span {
+  font-size: prem(12);
+  letter-spacing: 0.04em;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
+.circle {
+  width: prem(36);
+  height: prem(36);
+  position: relative;
+  border-radius: 50%;
+  background-color: $color-orange;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: prem(12);
+  height: prem(12);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/Arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.contact-option__contents {
+  position: relative;
+}
+
+.circle-container {
+  position: relative;
+  width: prem(720);
+  /* 必要に応じて調整 */
+  height: prem(486);
+  flex: 1;
+
+  /* 必要に応じて調整 */
+  @include mq("md") {
+    width: prem(420);
+    /* 必要に応じて調整 */
+    height: prem(548);
+    /* 必要に応じて調整 */
+  }
+
+  @include mq("sm") {
+    width: 107%;
+    /* 必要に応じて調整 */
+    height: prem(550);
+    /* 必要に応じて調整 */
+  }
+}
+
+.circle-set {
+  position: absolute;
+  width: prem(340);
+  /* 円の幅 */
+  height: prem(340);
+  /* 円の高さ */
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+
+  @include mq("md") {
+    width: prem(320);
+    /* 円の幅 */
+    height: prem(320);
+    /* 円の高さ */
+  }
+
+  @include mq("sm") {
+    width: 255px;
+    /* 円の幅 */
+    height: 255px;
+    /* 円の高さ */
+    top: 3px;
+    left: 11px;
+  }
+}
+
+.circle-image {
+  width: 100%;
+  /* 親の幅に合わせる */
+  height: 100%;
+  /* 親の高さに合わせる */
+  display: block;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+
+  @include mq("md") {
+    top: 51%;
+  }
+}
+
+.circle-set.secondary-set {
+  top: auto;
+  right: 0;
+  bottom: 0;
+
+  @include mq("sm") {
+    bottom: -459px;
+    left: 105px;
+  }
+}
+
+.a[href^="tel:"] {
+  pointer-events: none;
+
+  @include mq("md") {
+    pointer-events: auto;
+  }
+}
+
+.contact__title.title {
+  font-size: 32px;
+  letter-spacing: 0.04em;
+
+  @include mq("md") {
+    font-size: 28px;
+  }
+}
+
+.form.form--confirm .form__wrap {
+  border-bottom: 1px solid $color-gray04;
+}
+
+.sub-contact__inner--confirm.inner {
+  padding-bottom: 40px;
+}
+
+.sub-contact .form-select select {
+  border-radius: prem(8);
+}

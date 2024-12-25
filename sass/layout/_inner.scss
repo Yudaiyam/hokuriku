@@ -1,0 +1,94 @@
+@use "../foundation" as *;
+
+.inner {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+  width: 100%;
+  max-width: prem(1010);
+
+  @include mq("md") {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    max-width: prem(640);
+  }
+}
+
+.inner.inner--lg {
+  max-width: 1280px;
+
+  @include mq("md") {
+    max-width: none;
+    padding-left: prem(15);
+    padding-right: prem(15);
+  }
+}
+
+.inner.inner--md {
+  max-width: prem(1129);
+}
+
+/* ベーススタイル */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* 項目間の感覚（後で調整可） */
+  font-size: 14px;
+  align-items: center;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  /* 各リスト項目間の隙間 */
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-item::after {
+  content: " /";
+  margin-left: 10px;
+  /* /の前後に隙間 */
+}
+
+.breadcrumb-item:last-child::after {
+  content: "";
+  /* 最後の項目には/を表示しない */
+}
+
+/* ホームリンク */
+.breadcrumb-home a {
+  color: $color-blue3;
+  /* ホームの文字色 */
+  text-decoration: none;
+  border-bottom: 1px solid $color-blue3;
+  /* ホームリンクの下に青いボーダー */
+}
+
+.breadcrumb-home a:hover {
+  opacity: 0.8;
+}
+
+/* 現在のページ（最終項目）は黒色 */
+.breadcrumb-item.breadcrumb-business-detail,
+.breadcrumb-item.breadcrumb-product-detail {
+  color: $color-black;
+}
+
+/* グレーで表示する中間の項目 */
+.breadcrumb-item:not(.breadcrumb-business-detail):not(.breadcrumb-product-detail):not(.breadcrumb-home) {
+  color: $color-gray05;
+}
+
+.breadcrumb-item:not(:first-child) a {
+  color: inherit;
+  /* 親の文字色を引き継ぐ */
+}

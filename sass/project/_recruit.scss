@@ -1,0 +1,271 @@
+@use "../foundation" as *;
+
+.recruit {
+  height: prem(760);
+  position: relative;
+
+  @include mq("md") {
+    height: prem(720);
+  }
+}
+
+.recruit__list {
+  display: flex;
+  height: inherit;
+  position: relative;
+
+  @include mq("md") {
+    flex-direction: column-reverse;
+  }
+}
+
+.recruit__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
+  z-index: 1;
+}
+
+.recruit__item {
+  height: inherit;
+  width: 50%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.recruit__item:nth-of-type(1) {
+  background-image: url(../images/recruit01.jpg);
+  margin-right: calc(50% - 50vw);
+}
+
+.recruit__item:nth-of-type(2) {
+  background-image: url(../images/recruit02.webp);
+}
+
+.recruit__item-content {
+  position: absolute;
+  bottom: 66px;
+  right: prem(71);
+  z-index: 50;
+
+  @include mq("md") {
+    bottom: 23px;
+    right: 7px;
+    padding-right: 19px;
+  }
+}
+
+.recruit__item-title {
+  font-size: prem(32);
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: $color-white;
+  text-align: right;
+  font-weight: $regular;
+
+  @include mq(md) {
+    font-size: prem(24);
+  }
+}
+
+.recruit__item-title span {
+  margin-top: prem(25);
+  display: block;
+  font-size: prem(16);
+
+  @include mq(md) {
+    font-size: prem(4);
+    line-height: 1.7;
+  }
+}
+
+.recruit__item-text {
+  margin-top: prem(7);
+  font-size: prem(16);
+  line-height: 2;
+  letter-spacing: 0.01em;
+  color: $color-white;
+  text-align: right;
+  font-feature-settings: "palt";
+
+  @include mq(md) {
+    margin-top: prem(2);
+    font-size: prem(16);
+    line-height: 1.48;
+    letter-spacing: 0.01em;
+  }
+}
+
+.news__btn.news__btn--recruit {
+  margin-left: auto;
+  margin-top: prem(31);
+}
+
+.container {
+  position: relative;
+  background: $color-blue4;
+  height: prem(136);
+  overflow-x: hidden;
+}
+
+.container.container--history {
+  background: $color-gray01;
+  margin-top: prem(100);
+
+  @include mq("md") {
+    margin-top: prem(100);
+  }
+}
+
+.container.container--recruit-question {
+  background: $color-white;
+  margin-top: prem(100);
+
+  @include mq("md") {
+    margin-top: prem(100);
+  }
+}
+
+.container.container--others {
+  background: $color-blue9;
+}
+
+.container.container--product-detail {
+  background-color: $color-blue10;
+  margin-top: prem(50);
+}
+
+.recruit__item-content .button-container {
+  margin-left: auto;
+  margin-top: 30px;
+
+  @include mq("md") {
+    margin-top: 29px;
+  }
+}
+
+.wave {
+  position: absolute;
+  height: prem(50);
+  width: 100%;
+  background: $color-white;
+  bottom: 0;
+  animation: wave 10s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    height: prem(50);
+  }
+
+  50% {
+    height: prem(76);
+  }
+
+  100% {
+    height: prem(50);
+  }
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: $color-white;
+  right: -1.5%;
+  top: 40%;
+}
+
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: $color-blue4;
+  left: -1.5%;
+  top: 60%;
+}
+
+.container.container--history .wave::after {
+  background-color: $color-gray01;
+}
+
+.container.container--others .wave::after {
+  background-color: $color-blue9;
+}
+
+.container.container--product-detail .wave::after {
+  background-color: $color-blue10;
+}
+
+.container.container--recruit-question .wave::after {
+  background-color: $color-white;
+}
+
+.js-fade-up {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: opacity, transform;
+  transform: translate(0, 50px);
+}
+
+.js-fade-down {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: opacity, transform;
+  transform: translate(0, -50px);
+}
+
+.js-fade-left {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: opacity, transform;
+  transform: translate(-50px, 0);
+}
+
+.js-fade-right {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: opacity, transform;
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.js-fade-delay1 {
+  transition-delay: 2ms;
+}
+
+.js-fade-delay2 {
+  transition-delay: 4ms;
+}
+
+.js-fade-delay3 {
+  transition-delay: 6ms;
+}
+
+.js-fade-delay4 {
+  transition-delay: 8ms;
+}
+
+.js-fade-delay5 {
+  transition-delay: 10ms;
+}

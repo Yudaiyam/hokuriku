@@ -1,0 +1,33 @@
+@use "../foundation" as *;
+
+.md-primary {
+  color: $color-blue3;
+}
+
+.md_large {
+  font-size: prem(64);
+  font-weight: $bold;
+  letter-spacing: 0.04em;
+  @include mq("md") {
+    font-size: prem(32);
+  }
+}
+
+.md-capi {
+  text-transform: capitalize;
+}
+.md-upper {
+  text-transform: uppercase;
+}
+
+.md-none {
+  @include mq("md") {
+    display: none;
+  }
+}
+.md-show {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
