@@ -19,8 +19,6 @@
         </div>
       </div>
     </div>
-		<span class="treat bg-water"></span>
-      <span class="treat bg-water2"></span>
   </div>
 
 
@@ -32,7 +30,7 @@
         3営業日以内にご連絡いたしますので、<br class="md-show">もうしばらくお待ちください。
       </p>
       <div class="contact-complete__btn">
-        <a class="button-container" href="<?php echo esc_url(home_url()); ?>">
+        <a class="button-container">
           <span class="button-text">ホームに戻る</span>
           <div class="button-icon">
             <span class="arrow"></span>

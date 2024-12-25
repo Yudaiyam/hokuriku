@@ -19,8 +19,6 @@
         </div>
       </div>
     </div>
-	  <span class="treat bg-water"></span>
-      <span class="treat bg-water2"></span>
   </div>
 
   <section class="sdgs-goal layout-sdgs-goal js-tops">
@@ -154,7 +152,7 @@
         </li>
         <li class="sdgs-theme__item js-top">
           <div class="sdgs-theme__item-header">
-            <h4 class="sdgs-theme__item-header-title"><span class="md-upper">sustainable&nbsp;<br class="md-show">workstyle</span>（働き方）を<br class="md-show">社員に提供します。</h4>
+            <h4 class="sdgs-theme__item-header-title"><span class="md-upper">sustainable&nbsp;<br class="md-show">workstyle</span>（働き方）<br class="md-show">を目指します。</h4>
             <ul class="sdgs-theme__item-header-nav">
               <li class="sdgs-theme__item-header-nav-img">
                 <img src="<?php echo esc_url(get_theme_file_uri("./images/sdgs03.svg")); ?>" alt="省略" />
@@ -195,12 +193,6 @@
               <source srcset="<?php echo esc_url(get_theme_file_uri("./images/sdgs-bg-sp.svg")); ?>" media="(max-width: 768px)" />
               <img src="<?php echo esc_url(get_theme_file_uri("./images/sdgs-bg3-pc.svg")); ?>" alt="省略" />
             </picture>
-            <span class="bg-water" style=" width: 14%;
-    height: 60%;
-
-    left: 83%;
-    transform: rotate(-90deg);
-    top: 61%;"></span>
           </div>
         </li>
       </ol>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="single-information">
+<main>
   <div class="about-heading heading">
     <div class="heading__inner inner">
       <h1 class="heading__title">新着情報
@@ -19,8 +19,6 @@
         </div>
       </div>
     </div>
-	<span class="treat bg-water"></span>
-    <span class="treat bg-water2"></span>
   </div>
 
 
@@ -67,16 +65,9 @@
       <div class="sub-news-list__contents">
         <div class="sub-news-list__news news">
           <div class="news__inner">
-          <?php 
-            $args = array(
-              'post_type' => 'post',
-              'posts_per_page' => 10,
-              'paged' => get_query_var('paged', 1),
-            );
-            $query = new WP_Query($args);
-            if ($query->have_posts()) : ?>
+            <?php if (have_posts()) : ?>
               <ul class="news__list news__list--infomation news-list ">
-                <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <?php while (have_posts()) : the_post(); ?>
                   <li class="news-list__item">
                     <a href="<?php the_permalink(); ?>">
                       <div class="news-list__item-img news-list__item-img--infomation">

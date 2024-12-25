@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="" id="contact-input">
+<main class="">
   <div class="sub-contact-heading heading">
     <div class="heading__inner inner">
       <h1 class="heading__title"><?php the_title(); ?>

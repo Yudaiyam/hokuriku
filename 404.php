@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="page404">
+<main>
   <div class="company-heading heading">
     <div class="heading__inner inner">
       <h1 class="heading__title">ページが見つかりません。
@@ -18,8 +18,6 @@
           <!-- Breadcrumb NavXTで出力される部分 ここまで -->
         </div>
       </div>
-      <span class="bg-water"></span>
-      <span class="bg-water2"></span>
     </div>
   </div>
 

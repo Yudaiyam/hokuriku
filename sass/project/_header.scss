@@ -1,9 +1,7 @@
 @use "../foundation" as *;
-
 .header {
   padding-top: prem(32);
   padding-bottom: prem(32);
-
   @include mq("md") {
     padding-top: prem(0);
     padding-bottom: prem(24);
@@ -18,11 +16,11 @@
   color: $color-black;
 }
 
-.header.scrolled .header__nav-modal-wrap>p {
+.header.scrolled .header__nav-modal-wrap > p {
   color: $color-black;
 }
 
-.header.scrolled .header__nav-modal-wrap>p::before {
+.header.scrolled .header__nav-modal-wrap > p::before {
   border-color: $color-black;
 }
 
@@ -35,7 +33,6 @@
   padding-top: prem(24);
   padding-bottom: prem(24);
   text-transform: capitalize;
-
   @include mq("md") {
     padding-top: prem(7);
     padding-bottom: prem(7);
@@ -49,7 +46,6 @@
   height: prem(56);
   display: flex;
   justify-content: space-between;
-
   @include mq("md") {
     padding-left: prem(20);
     padding-right: prem(20);
@@ -60,7 +56,6 @@
   max-width: prem(306);
   width: 100%;
   height: inherit;
-
   @include mq("md") {
     max-width: prem(209);
   }
@@ -88,7 +83,6 @@
   position: relative;
   display: block;
   height: inherit;
-
   @include mq("md") {
     display: none;
   }
@@ -113,16 +107,16 @@
   align-items: center;
 }
 
-.header__nav-item.header__nav-item--contact>a {
+.header__nav-item.header__nav-item--contact > a {
   color: $color-white;
 }
 
-.header.header--sub .header__nav-item.header__nav-item--contact>a {
+.header.header--sub .header__nav-item.header__nav-item--contact > a {
   color: $color-white;
 }
 
-.header__nav-item>a,
-.header__nav-modal-wrap>p {
+.header__nav-item > a,
+.header__nav-modal-wrap > p {
   padding: 0 prem(18) 0 prem(22);
   height: inherit;
   display: flex;
@@ -137,17 +131,17 @@
   text-align: center;
 }
 
-.header.header--sub .header__nav-item>a,
-.header.header--sub .header__nav-modal-wrap>p {
+.header.header--sub .header__nav-item > a,
+.header.header--sub .header__nav-modal-wrap > p {
   color: $color-black;
 }
 
-.header__nav-modal-wrap>p {
+.header__nav-modal-wrap > p {
   position: relative;
   transition: 0.3s;
 }
 
-.header__nav-modal-wrap>p::before {
+.header__nav-modal-wrap > p::before {
   content: "";
   position: absolute;
   top: prem(25);
@@ -160,12 +154,12 @@
   transition: 0.3s;
 }
 
-.header.header--sub .header__nav-modal-wrap>p::before {
+.header.header--sub .header__nav-modal-wrap > p::before {
   border-top: 1px solid $color-black;
   border-right: 1px solid $color-black;
 }
 
-.header__nav-modal-wrap:hover>p::before {
+.header__nav-modal-wrap:hover > p::before {
   top: prem(29);
   transform: rotate(-45deg);
 }
@@ -205,7 +199,7 @@
 
 
 
-.header__nav-modal-wrap:hover>.header__nav-modal {
+.header__nav-modal-wrap:hover > .header__nav-modal {
   // transform: rotateX(0deg);
   opacity: 1;
   visibility: visible;
@@ -267,7 +261,6 @@
   cursor: pointer;
   transition: 0.3s;
   display: none;
-
   @include mq("md") {
     display: block;
   }
@@ -279,7 +272,7 @@
   transform: translateX(-50%);
   display: block;
   width: prem(26);
-  height: 1.5px;
+  height: 1px;
   background-color: $color-white;
   transition: 0.5s;
 }
@@ -290,7 +283,7 @@
   text-transform: capitalize;
   font-weight: $bold;
   position: absolute;
-  top: 37px;
+  top: 28px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -302,7 +295,7 @@
   font-weight: $bold;
   color: $color-white;
   position: absolute;
-  top: 35px;
+  top: 28px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -316,21 +309,19 @@
 }
 
 .js-hamburger.is-open .hamburger__bar-close {
-  display: block;
-  /* is-open のときに表示 */
+  display: block; /* is-open のときに表示 */
 }
 
 .js-hamburger.is-open .hamburger__bar-menu {
-  display: none;
-  /* is-open のときに非表示 */
+  display: none; /* is-open のときに非表示 */
 }
 
 .header__hamburger span:nth-of-type(1) {
-  top: -6px;
+  top: prem(-4);
 }
 
 .header__hamburger span:nth-of-type(2) {
-  top: -2px;
+  top: 0;
 }
 
 .header__hamburger span:nth-of-type(3) {
@@ -385,7 +376,7 @@
   width: 100%;
 }
 
-.header__drawer-item>a,
+.header__drawer-item > a,
 .header__drawer-accordion-title {
   padding: prem(16) 0;
   display: block;
@@ -397,7 +388,7 @@
   text-align: left;
 }
 
-.header__drawer-item>a span,
+.header__drawer-item > a span,
 .header__drawer-accordion-title span {
   margin-top: prem(5);
   display: block;
@@ -421,7 +412,6 @@
   height: prem(1.5);
   background: $color-blue3;
   transition: 0.3s;
-
   @include mq(md) {
     top: prem(24);
     width: prem(14);
@@ -433,7 +423,8 @@
   transform: rotate(-90deg);
 }
 
-.header__drawer-item {}
+.header__drawer-item {
+}
 
 .header__drawer-item a {
   color: $color-black;
@@ -456,18 +447,16 @@
 }
 
 .header__drawer-btn {
-  margin: 24px auto;
+  margin-top: prem(40);
 }
 
 .header__drawer-btn a {
-  padding: 18px;
+  padding: prem(20) prem(50);
   background-color: $color-orange;
   color: $color-white;
   border-radius: 30%;
   max-width: prem(300);
   width: 100%;
-  display: inline-block;
-  text-align: center;
 }
 
 .header__drawer-accordion-list-wrap {

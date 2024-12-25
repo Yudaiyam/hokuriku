@@ -24,7 +24,7 @@ function my_script_init()
     wp_enqueue_script('jquery');
 
     // Google Fontsの読み込み
-    wp_enqueue_style('BIZ-UDPGothic-Mincho', 'https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=BIZ+UDPMincho&display=swap" rel="stylesheet');
+    wp_enqueue_style('BIZ-UDPGothic-Mincho', '//fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDPMincho:wght@400;700&family=Oswald:wght@200..700&display=swap');
 
     // GSAPの読み込み
     wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
@@ -114,25 +114,20 @@ function custom_breadcrumb()
     echo '<nav class="breadcrumb"><ul class="breadcrumb-list">';
     echo '<li class="breadcrumb-item breadcrumb-home"><a href="' . home_url() . '">ホーム</a></li>';
 
-    // お問い合わせ確認画面またはサンクスページ
-    if (is_page('contact-confirm') || is_page('contact-thanks')) { 
-        // "contact-confirm"と"contact-thanks"は固定ページのスラッグ
-        echo '<li class="breadcrumb-item breadcrumb-contact"><a href="' . home_url('/contact/') . '">お問い合わせ</a></li>';
-    }
-
-    // お問い合わせフォームの通常ページ
-    if (is_page('contact')) {
-        echo '<li class="breadcrumb-item breadcrumb-contact">お問い合わせ</li>';
-    }
-
     if (is_post_type_archive('product')) {
-        // 事業・製品紹介アーカイブページ
-        echo '<li class="breadcrumb-item breadcrumb-business-list">事業・製品紹介</li>';
+        // 事業一覧アーカイブページ
+        echo '<li class="breadcrumb-item breadcrumb-business-list">事業一覧</li>';
     }
 
     if (is_singular('product')) {
+        // 事業詳細ページ
+        echo '<li class="breadcrumb-item breadcrumb-business-list-child"><a href="' . get_post_type_archive_link('product') . '">事業一覧</a></li>';
+        echo '<li class="breadcrumb-item breadcrumb-business-detail">' . get_the_title() . '</li>';
+    }
+
+    if (is_singular('goods')) {
         // 製品詳細ページ
-        echo '<li class="breadcrumb-item breadcrumb-business-list"><a href="' . get_post_type_archive_link('product') . '">事業・製品紹介</a></li>';
+        echo '<li class="breadcrumb-item breadcrumb-business-list"><a href="' . get_post_type_archive_link('product') . '">事業一覧</a></li>';
 
         // 製品に紐づく事業を取得
         $terms = get_the_terms(get_the_ID(), 'business-category');
@@ -193,15 +188,3 @@ add_action('init', function () {
         'top'
     );
 });
-
-
-function load_simplebar_css() {
-	wp_enqueue_style('simplebar-css', 'https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.css', array(), '5.3.6', 'all');
-}
-add_action('wp_enqueue_scripts', 'load_simplebar_css', 999);
-
-// simplebar JavaScriptファイルの読み込み
-function load_simplebar_js() {
-	wp_enqueue_script('simplebar-js', 'https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.js', array(), '5.3.6', true);
-}
-add_action('wp_enqueue_scripts', 'load_simplebar_js', 999);

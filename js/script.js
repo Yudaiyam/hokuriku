@@ -19,50 +19,43 @@ jQuery(function ($) {
         $(".js-drawer").fadeOut();
       }
     });
-
-    // ヘッダーナビのアコーディオン
-  $(".js-drawer-accordion").on("click", function () {
-    $(this).toggleClass("is-open");
-    if($(this).hasClass("is-open")) {
-      $(this).next().slideDown();
-    }else{
-      $(this).next().slideUp();
-    }
   });
+
+  // ヘッダーナビのアコーディオン
+  $(".js-drawer-accordion").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("is-open");
   });
 
   // スクロールトップボタン
   $(function () {
     var btn = $(".scrollTopButton"); // ボタン要素
     var timer; // スクロール停止のタイマー
-    var messageSectionTop = $("#message").offset().top; // #messageのトップ位置を取得
 
     $(window).on("scroll", function () {
-        // スクロール開始時、ボタンを非表示にする
-        btn.removeClass("is-active");
+      // スクロール開始時、ボタンを非表示にする
+      btn.removeClass("is-active");
 
-        // スクロール中のタイマーをクリア
-        clearTimeout(timer);
+      // スクロール中のタイマーをクリア
+      clearTimeout(timer);
 
-        // スクロールが停止して0.2秒後にボタンを表示
-        timer = setTimeout(function () {
-            var scrollTop = $(window).scrollTop(); // 現在のスクロール位置を取得
-
-            if (scrollTop > messageSectionTop) {
-                // #messageを過ぎたらボタンを表示
-                btn.addClass("is-active");
-            } else {
-                // #message以前ではボタンを非表示
-                btn.removeClass("is-active");
-            }
-        }, 200); // 200ms後にボタンを表示
+      // スクロールが停止して0.2秒後にボタンを表示
+      timer = setTimeout(function () {
+        if ($(window).scrollTop() > 0) {
+          // スクロール位置がページ上部以外ならボタンをスライドイン表示
+          btn.addClass("is-active");
+        } else {
+          // ページトップではボタンをスライドアウト非表示
+          btn.removeClass("is-active");
+        }
+      }, 200); // 200ms後にボタンを表示
     });
 
     // ボタンクリックでページトップにスムーズスクロール
     btn.on("click", function () {
-        $("html, body").animate({ scrollTop: 0 }, 600); // 600msでスムーズに移動
+      $("html, body").animate({ scrollTop: 0 }, 600); // 600msでスムーズに移動
     });
-});
+  });
 
 
 

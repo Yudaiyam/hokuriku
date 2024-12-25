@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
+
 <head>
-<meta charset="UTF-8">
-
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <?php if (is_404()) : ?>
 	      <meta http-equiv="refresh" content=" 7; url=<?php echo esc_url(home_url("")); ?>">
     <?php endif; ?> -->
   <?php wp_head(); ?>
-<?php
-// 特定のページでCSSファイルを読み込む
-if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
-    echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css-a/style.css">';
-} elseif (is_front_page() || is_post_type_archive('product') || is_singular('product') || is_page('detail')) {
-    echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css-b/style.css">';
-} elseif (strpos($_SERVER['REQUEST_URI'], 'infomation') !== false || 
-          is_post_type_archive('interview') || is_singular('interview') || 
-          is_page('contact')|| is_singular('goods'))  {
-    echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css-c/style.css">';
-}
-?>
+</head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
@@ -75,7 +65,7 @@ if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
                 </div>
                 <ul class="header__nav-modal-nav">
                   <li class="header__nav-modal-item">
-                    <a href="<?php echo esc_url(home_url("/product/chemical")) ?>">
+                    <a href="<?php echo esc_url(home_url("/product/chemicals")) ?>">
                       <p class="header__nav-modal-item-text">化成品事業</p>
                     </a>
                   </li>
@@ -176,7 +166,7 @@ if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
                 <div class="header__drawer-accordion-list-wrap">
                   <ul class="header__drawer-accordion-list">
                     <li class="header__drawer-accordion-item">
-                      <a href="<?php echo esc_url(home_url("/product/chemical")) ?>">
+                      <a href="<?php echo esc_url(home_url("/product/chemicals")) ?>">
                         <div class="button-icon md-small-btn">
                           <span class="arrow"></span>
                         </div>
@@ -230,7 +220,7 @@ if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
               </li>
             </ul>
             <div class="header__drawer-btn">
-              <a href="<?php echo esc_url(home_url("contact")) ?>">お問い合わせ</a>
+              <a href="<?php echo esc_url(home_url("contact")) ?>">">お問い合わせ</a>
             </div>
           </nav>
         </div>
@@ -290,7 +280,7 @@ if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
                 </div>
                 <ul class="header__nav-modal-nav">
                   <li class="header__nav-modal-item">
-                    <a href="<?php echo esc_url(home_url("/product/chemical")) ?>">
+                    <a href="<?php echo esc_url(home_url("/product/chemicals")) ?>">
                       <p class="header__nav-modal-item-text">化成品事業</p>
                     </a>
                   </li>
@@ -392,7 +382,7 @@ if (is_page(array('company', 'feature', 'sdgs', 'recruit'))) {
                   <ul class="header__drawer-accordion-list">
                     <li class="header__drawer-accordion-item">
 
-                      <a href="<?php echo esc_url(home_url("/product/chemical")) ?>">
+                      <a href="<?php echo esc_url(home_url("/product/chemicals")) ?>">
                         <div class="button-icon md-small-btn">
                           <span class="arrow"></span>
                         </div>

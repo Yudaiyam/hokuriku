@@ -110,6 +110,7 @@
   height: 100%;
   // background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
 }
 
 .button-container.button-container--reverse {

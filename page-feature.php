@@ -19,8 +19,6 @@
         </div>
       </div>
     </div>
-	  <span class="treat bg-water"></span>
-      <span class="treat bg-water2"></span>
   </div>
 
   <section class="strength layout-strength">

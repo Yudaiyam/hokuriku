@@ -66,7 +66,7 @@
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  width: 100% !important;
+  width: 1280;
   margin-top: prem(26);
   height: 737px;
   background-image: url(../images/group-map.jpg);
@@ -76,7 +76,7 @@
 
   @include mq("md") {
     background-image: url(../images/group-map-sp.jpg);
-    width: 1440px !important;
+    width: 1440px;
     height: prem(648);
   }
 }

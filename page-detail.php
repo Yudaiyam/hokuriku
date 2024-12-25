@@ -24,7 +24,7 @@
         <div class="detail-data__inner inner inner--lg">
             <div class="detail-data__heading recruit-heading">
                 <div class="recruit-heading-wrap">
-                    <h2 class="recruit-heading__title" id="data">データで見る<br class="md-show">北陸化成工業所</h2>
+                    <h2 class="recruit-heading__title" id="data">データで見る北陸化成工業所</h2>
                     <p class="recruit-heading__text recruit-heading__text--detail md-none">北陸化成工業所では、従業員一人一人が働きやすい職場であるために、<br class="md-none">“社員のために会社ができること”を考えながら、労働条件の改善に努めています。</p>
                 </div>
                 <p class="recruit-heading__text recruit-heading__text--detail md-show">北陸化成工業所では、従業員一人一人が働きやすい職場であるために、<br class="md-none">“社員のために会社ができること”を考えながら、労働条件の改善に努めています。</p>
@@ -476,7 +476,7 @@
                                 <li id="tab04" class="tab__content-item js-tab-content is-active">
                                     <ul class="tab__content-list faq-list">
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>当社の企業としての自慢はどんなところですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>当社の企業としての自慢はどんなところですか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <dl class="recruit-answer__list">
                                                     <dt class="recruit-answer__number"><span>1</span>位</dt>
@@ -505,7 +505,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>当社の働くうえでの魅力はなんですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>当社の働くうえでの魅力はなんですか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>ワークライフバランスが保てる環境</li>
@@ -522,7 +522,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>当社のこんなところが面白い</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>当社のこんなところが面白い</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>セレクト型社員旅行</li>
@@ -538,7 +538,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>あなたにとって、『harmony』とは？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>あなたにとって、『harmony』とは？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>支えあいながら同じ方向へと進んでいく</li>
@@ -729,19 +729,19 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>通勤手段は何ですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>通勤手段は何ですか？</p>
                                             <div class="faq-list__item-answer recruit-answer-img">
                                                 <img src="<?php echo esc_url(get_theme_file_uri("./images/detail/detail-list-03.svg")); ?>" alt="" class="md-center">
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>通勤時間はどのくらいですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>通勤時間はどのくらいですか？</p>
                                             <div class="faq-list__item-answer recruit-answer-img">
                                                 <img src="<?php echo esc_url(get_theme_file_uri("./images/detail/detail-list-06.svg")); ?>" alt="" class="md-center">
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>5年後のあなたの目標は何ですか？（仕事）</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>5年後のあなたの目標は何ですか？（仕事）</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>先輩や上司が求めてるライン以上で仕事をこなせるようになる</li>
@@ -754,7 +754,7 @@
 
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>求職者の方にむけて富山弁で一言！</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>求職者の方にむけて富山弁で一言！</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>いっかい来てみられ</li>
@@ -772,13 +772,13 @@
                                 <li id="tab07" class="tab__content-item js-tab-content">
                                     <ul class="tab__content-list faq-list">
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>出身地はどこですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>出身地はどこですか？</p>
                                             <div class="faq-list__item-answer recruit-answer-img">
                                                 <img src="<?php echo esc_url(get_theme_file_uri("./images/detail/detail-list-09.svg")); ?>" alt="">突然
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>大切にしているものは何ですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>大切にしているものは何ですか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <dl class="recruit-answer__list">
                                                     <dt class="recruit-answer__number"><span>1</span>位</dt>
@@ -807,7 +807,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>大切にしているものは何ですか？（生活）</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>大切にしているものは何ですか？（生活）</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>健康で働き、家族と共に過ごす喜びを分かち合う</li>
@@ -819,13 +819,13 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>インドア派？アウトドア派？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>インドア派？アウトドア派？</p>
                                             <div class="faq-list__item-answer recruit-answer-img">
                                                 <img src="<?php echo esc_url(get_theme_file_uri("./images/detail/detail-list-04.svg")); ?>" alt="" class="md-center">
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>仕事後はどう過ごしていますか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>仕事後はどう過ごしていますか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <dl class="recruit-answer__list">
                                                     <dt class="recruit-answer__number"><span>1</span>位</dt>
@@ -854,7 +854,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>あなたの趣味は何ですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>あなたの趣味は何ですか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>キャンプ</li>
@@ -871,7 +871,7 @@
                                             </div>
                                         </li>
                                         <li class="faq-list__item">
-                                            <p class="faq-list__item-question js-faq-question js-faq-question-detail"><span>Q</span>あなたの推し活は何ですか？</p>
+                                            <p class="faq-list__item-question js-faq-question"><span>Q</span>あなたの推し活は何ですか？</p>
                                             <div class="faq-list__item-answer recruit-answer">
                                                 <ul class="recruit-answer__items">
                                                     <li>バンド</li>

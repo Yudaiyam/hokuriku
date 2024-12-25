@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="single-interview">
+<main>
   <div class="interview-mv layout-interview-mv">
     <div class="interview-mv__inner inner">
       <div class="interview-mv__contents">
@@ -35,9 +35,6 @@
     <div class="interview-mv__img">
       <?php the_post_thumbnail('full'); ?>
     </div>
-    <span class="treat bg-water"></span>
-    <span class="treat bg-water2"></span>
-    <span class="interview__bg-left"></span>
   </div>
   <div class="single-interview layout-single-interview">
     <div class="single-interview__inner inner inner--lg">
@@ -118,112 +115,171 @@
       <h2 class="schedule__title">1日のスケジュール</h2>
 
       <dl class="schedule__list schedule-list">
-        <?php
-        $time6 = get_field("time-6");
-        $time7 = get_field("time-7");
-        $time8 = get_field("time-8");
-        $time9 = get_field("time-9");
-        $time10 = get_field("time-10");
-        $time11 = get_field("time-11");
-        $time12 = get_field("time-12");
-        $time13 = get_field("time-13");
-        $time14 = get_field("time-14");
-        $time15 = get_field("time-15");
-        $time16 = get_field("time-16");
-        $time17 = get_field("time-17");
-        $time18 = get_field("time-18");
-        $time19 = get_field("time-19");
-        $time20 = get_field("time-20");
-         if($time6) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">6:00</dt>
-            <dd class="schedule-list__description"><?php echo $time6; ?></dd>
-          </div>
-        <?php } ?>
-        <?php if($time7) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">7:00</dt>
-            <dd class="schedule-list__description"><?php echo $time7; ?></dd>
-          </div>
-        <?php } ?>
-        <?php if($time8) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">8:00</dt>
-            <dd class="schedule-list__description"><?php echo $time8; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time9) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">9:00</dt>
-            <dd class="schedule-list__description"><?php echo $time9; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time10) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">10:00</dt>
-            <dd class="schedule-list__description"><?php echo $time10; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time11) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">11:00</dt>
-            <dd class="schedule-list__description"><?php echo $time11; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time12) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">12:00</dt>
-            <dd class="schedule-list__description"><?php echo $time12; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time13) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">13:00</dt>
-            <dd class="schedule-list__description"><?php echo $time13; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time14) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">14:00</dt>
-            <dd class="schedule-list__description"><?php echo $time14; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time15) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">15:00</dt>
-            <dd class="schedule-list__description"><?php echo $time15; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time16) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">16:00</dt>
-            <dd class="schedule-list__description"><?php echo $time16; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time17) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">17:00</dt>
-            <dd class="schedule-list__description"><?php echo $time17; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time18) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">18:00</dt>
-            <dd class="schedule-list__description"><?php echo $time18; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time19) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">19:00</dt>
-            <dd class="schedule-list__description"><?php echo $time19; ?></dd>
-          </div>
-          <?php } ?>
-          <?php if($time20) { ?>
-          <div class="schedule-list__item">
-            <dt class="schedule-list__term">20:00</dt>
-            <dd class="schedule-list__description"><?php echo $time20; ?></dd>
-          </div>
-        <?php } ?>
+        <?php 
+        $time_6 = get_field("time-6"); 
+        if ($time_6): 
+       ?>
+		<div class="schedule-list__item">
+          <dt class="schedule-list__term">6:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-6"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+        <?php 
+        $time_7 = get_field("time-7"); 
+        if ($time_7): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">7:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-7"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+        <?php 
+        $time_8 = get_field("time-8"); 
+        if ($time_8): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">8:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-8"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_9 = get_field("time-9"); 
+        if ($time_9): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">9:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-9"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_10 = get_field("time-10"); 
+        if ($time_10): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">10:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-10"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_11 = get_field("time-11"); 
+        if ($time_11): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">11:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-11"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_12 = get_field("time-12"); 
+        if ($time_12): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">12:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-12"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_13 = get_field("time-13"); 
+        if ($time_13): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">13:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-13"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_14 = get_field("time-14"); 
+        if ($time_14): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">14:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-14"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_15 = get_field("time-15"); 
+        if ($time_15): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">15:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-15"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_16 = get_field("time-16"); 
+        if ($time_16): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">16:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-16"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_17 = get_field("time-17"); 
+        if ($time_17): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">17:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-17"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_18 = get_field("time-18"); 
+        if ($time_18): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">18:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-18"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_19 = get_field("time-19"); 
+        if ($time_19): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">19:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-19"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
+       <?php 
+        $time_20 = get_field("time-20"); 
+        if ($time_20): 
+       ?>
+        <div class="schedule-list__item">
+          <dt class="schedule-list__term">20:00</dt>
+          <dd class="schedule-list__description"><?php the_field("time-20"); ?></dd>
+        </div>
+		<?php 
+		endif; 
+		?>
       </dl>
     </div>
     <div class="schedule__icon">
@@ -242,7 +298,7 @@
     </div>
   </div>
 
-  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" style="margin-bottom: -7px; vertical-align: middle;">
+  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" style="margin-bottom: -7px;">
     <style>
       .path-0 {
         animation: pathAnim-0 15s;
@@ -336,11 +392,9 @@
           <ul class="swiper-wrapper">
             <?php
             // カスタム投稿タイプ 'interview' の情報を取得
-            $current_post_id = get_the_ID();
             $args = array(
               'post_type' => 'interview', // カスタム投稿タイプ
               'posts_per_page' => -1, // すべての投稿を取得
-              'post__not_in' => array($current_post_id), // 現在の投稿を除外
             );
             $interview_posts = new WP_Query($args);
 

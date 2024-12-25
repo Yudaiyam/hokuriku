@@ -24,23 +24,23 @@
       </div>
     </div>
     <div class="hidden-div">
-      <div class="hidden-div__inner">
-        <div class="hidden-div__map">
-          <img src="<?php echo esc_url(get_theme_file_uri("./images/mv-3.svg")); ?>" alt="富山県の地図と高岡市の位置" />
-        </div>
-        <div class="hidden-div__text">
-          1949年に工業薬品メーカーとして<br class="md-none" />
-          スタートした「北陸化成工業所」は、<br />
-          地域社会との調和を考え<br class="md-none" />
-          地域と共に成長していくことを目指しながら、<br class="md-none" />
-          事業領域を広げてきました。<br />
-          私たちは<br />
-          地域から発生する副生物を独自の技術で有効活用し、<br />
-          お客様の求める商品を生み出すことで、<br />
-          循環型社会の実現に貢献し続ける <br>富山県高岡市の化学メーカーです。
-        </div>
-      </div>
-    </div>
+        <div class="hidden-div__inner">
+			<div class="hidden-div__map">
+			  <img src="<?php echo esc_url(get_theme_file_uri("./images/mv-3.svg")); ?>" alt="富山県の地図と高岡市の位置" />
+			</div>
+			<div class="hidden-div__text">
+			  1949年に工業薬品メーカーとして<br class="md-none" />
+			  スタートした「北陸化成工業所」は、<br />
+			  地域社会との調和を考え<br class="md-none" />
+			  地域と共に成長していくことを目指しながら、<br class="md-none" />
+			  事業領域を広げてきました。<br />
+			  私たちは<br />
+			  地域から発生する副生物を独自の技術で有効活用し、<br />
+			  お客様の求める商品を生み出すことで、<br />
+			  循環型社会の実現に貢献し続ける <br>富山県高岡市の化学メーカーです。
+			</div>
+		  </div>
+	  </div>
     <div class="mv__polkadots polkadots">
       <img src="<?php echo esc_url(get_theme_file_uri("./images/polkadots.svg")); ?>" />
     </div>
@@ -101,9 +101,9 @@
               <a href="<?php the_permalink(); ?>">
                 <div class="news-list__item-img">
                   <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('large'); ?>
+                    <?php the_post_thumbnail('medium_large'); ?>
                   <?php else : ?>
-                    <img src="<?php echo esc_url(get_theme_file_uri("./images/noimage.jpg")); ?>" alt="Default Image" size-large>
+                    <img src="<?php echo esc_url(get_theme_file_uri("./images/noimage.jpg")); ?>" alt="Default Image">
                   <?php endif; ?>
                 </div>
                 <div class="news-list__item-content">
@@ -157,16 +157,16 @@
                 <a href="<?php the_permalink(); ?>">
                   <div class="news-list__item-img">
                     <?php if (has_post_thumbnail()) : ?>
-                      <?php the_post_thumbnail('large'); ?>
+                       <?php the_post_thumbnail('medium_large'); ?>
                     <?php else : ?>
                       <img src="<?php echo esc_url(get_theme_file_uri("./images/noimage.jpg")); ?>" alt="Default Image">
                     <?php endif; ?>
                   </div>
                   <div class="news-list__item-content">
                     <div class="news-list__item-meta">
-                      <time class="news-list__item-date" datetime="<?php echo get_the_date('c'); ?>">
-                        <?php echo get_the_date('Y/m/d'); ?>
-                      </time>
+                    <time class="news-list__item-date" datetime="<?php echo get_the_date('c'); ?>">
+                      <?php echo get_the_date('Y/m/d'); ?>
+                    </time>
                       <p class="news-list__item-category">
                         <?php
                         $categories = get_the_category();
@@ -345,9 +345,19 @@
               <p class="modal__title">トンネル工事</p>
               <p class="modal__place">使われている製品：ポリ塩化アルミニウム</p>
             </div>
-            <p class="modal__text">トンネル工事によって坑内湧水や、生コンの洗浄水といった多くの濁水が発生します。これら化学物質や汚れを含んだ濁水を適切に処理することは環境保全の面からとても重要となります。当社のポリ塩化アルミニウムはトンネル工事において、濁水に含まれる濁りを取り除き、排水できるようにするために使用されています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/pac")) ?>">
+            <p class="modal__text">トンネル工事によって坑内湧水や、生コンの洗浄水といった多くの濁水が発生します。これら化学物質や汚れを含んだ濁水を適切に処理することは環境保全の面からとても重要ですよね。当社のポリ塩化アルミニウムはトンネル工事において、濁水に含まれる濁りを取り除き、排水できるようにしています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
               <span class="button-text">ポリ塩化アルミニウムについて詳しくみる</span>
+              <div class="button-icon">
+                <span class="arrow"></span>
+              </div>
+            </a>
+			  <div class="modal__title-wrap">
+              <p class="modal__place">使われている製品：アルミン酸ソーダ</p>
+            </div>
+            <p class="modal__text">トンネル工事で掘り進んだ後は崩れてこない様にセメントを吹き付けて固めます。固めるには時間がかかりますが北陸化成工業所のアルミン酸ソーダを追加するとあっという間に固まりますので作業性が良くなります。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
+              <span class="button-text">アルミン酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
               </div>
@@ -375,7 +385,7 @@
               <p class="modal__place">使われている製品：コーテッドサンド/廃砂引取り</p>
             </div>
             <p class="modal__text">フェノール樹脂でコーティングした砂で、砂型を作るための材料です。使用後は回収して再生処理を行い、再び原料として使用することができます。使用される用途に合わせて様々な種類の製品を揃えています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/rcs")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/products/cast/rcs")) ?>">
               <span class="button-text">コーテッドサンド/廃砂引取りについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -403,8 +413,8 @@
               <p class="modal__title">浄水場</p>
               <p class="modal__place">使われている製品：ポリ塩化アルミニウム</p>
             </div>
-            <p class="modal__text">従来の凝集剤に代わる画期的な多能性無機高分子凝集剤として、経済性、作業性、凝集効果 および 各種原排水処理に対する幅広い適応性において、卓越した性能を有しています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/pac")) ?>">
+            <p class="modal__text">ポリ塩化アルミニウムは水の中に含まれる濁りを取り除くことができ、浄水場などで飲み水を作るために日本で一番幅広く使用されている凝集剤です。北陸の美味しい水道水を皆さまのご家庭にお届けするために当社の薬品が役立っています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
               <span class="button-text">ポリ塩化アルミニウムについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -462,7 +472,7 @@
               <p class="modal__place">使われている製品：廃砂引取り（リサイクル）</p>
             </div>
             <p class="modal__text">鋳物メーカーでは鋳造製品を製造する際に鋳物砂でできた砂型を使用します。当社では鋳物メーカーで使用された砂を回収し、再び鋳物砂として使用できるよう再生処理を行っています。</p>
-            <a class="modal__btn">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/cast/recycling-sand")) ?>">
               <span class="button-text">廃砂引取り（リサイクル）について詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -491,8 +501,18 @@
               <p class="modal__place">使われている製品：硫酸バンド</p>
             </div>
             <p class="modal__text">紙を作るときはサイズ剤というインク滲み防止のための薬品を入れますが、それだけでは紙に定着しません。硫酸バンドを追加することで紙とサイズ剤が仲良くつながり効果が発揮されます。お客様、地域の方々、従業員とも仲良くつながっていたいですね。あと、紙を強くするために使われることもあります。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/las")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/las")) ?>">
               <span class="button-text">硫酸バンドについて詳しくみる</span>
+              <div class="button-icon">
+                <span class="arrow"></span>
+              </div>
+            </a>
+			  <div class="modal__title-wrap">
+              <p class="modal__place">使われている製品：ホワイトカーボン</p>
+            </div>
+            <p class="modal__text">新聞紙が軽く薄くできるのはホワイトカーボンのおかげ。北陸化成工業所の製品が余分なインクを吸収し新聞を読みやすくしています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/las")) ?>">
+              <span class="button-text">ホワイトカーボンについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
               </div>
@@ -519,8 +539,8 @@
               <p class="modal__title">化粧品メーカー</p>
               <p class="modal__place">使われている製品：アルミン酸ソーダ</p>
             </div>
-            <p class="modal__text">化粧品を長持ちさせる</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/alusou")) ?>">
+            <p class="modal__text">化粧品の原料の一部をコーティングして長持ちさせるのに使用されています。長く使える様になるのは使う側にとってはとてもうれしいですね。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/alusou")) ?>">
               <span class="button-text">アルミン酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -578,7 +598,7 @@
               <p class="modal__place">使われている製品：廃液引取り（リサイクル）</p>
             </div>
             <p class="modal__text">アルミの表面処理を行うことで発生する廃酸。建材メーカーさんでは不要なものですが、当社はそれをリサイクル。再び世の中の役に立つ新しい製品へ生まれ変わらせています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/business/chemical")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical")) ?>">
               <span class="button-text">化成品事業について詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -607,7 +627,7 @@
               <p class="modal__place">使われている製品：塩化アルミニウム</p>
             </div>
             <p class="modal__text">火力発電所さんで使用する石炭にフッ素が含まれてることから、廃水中にフッ素が含まれます。このまま排出することはできませんので、塩化アルミニウムがフッ素を取り込んで無害化する一役を担っています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/alcl3")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/alcl3")) ?>">
               <span class="button-text">塩化アルミニウムについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -636,7 +656,7 @@
               <p class="modal__place">使われている製品：排水用硫酸バンド</p>
             </div>
             <p class="modal__text">北陸には様々な工場があり、様々な廃水が排出されています。工場外へ放水するためにはキレイにする必要があります。そうです、そこに北陸化成工業所の排水用硫酸バンドがお役に立っています。縁の下の力持ちです。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/las")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/las")) ?>">
               <span class="button-text">排水用硫酸バンドについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -664,8 +684,8 @@
               <p class="modal__title">土木工事</p>
               <p class="modal__place">使われている製品：珪酸ソーダ</p>
             </div>
-            <p class="modal__text">軟弱土壌を改良し、止水、土木工事を安全に施工するための薬液</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/keisou")) ?>">
+            <p class="modal__text">工事現場において水が含まれているような軟弱土壌に中和剤と共に混ぜ込み、固化させ、工事しやすくします。水がしみ出てくるような場所でも改良を行うことで工事が行えるようになります。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/keisou")) ?>">
               <span class="button-text">珪酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -723,7 +743,7 @@
               <p class="modal__place">使われている製品：中子</p>
             </div>
             <p class="modal__text">複雑な鋳物製品を作るためには、鋳物内部に空洞や様々な形状を作り出す必要があります。中子の原料であるレジンコーテッドサンドのメーカーとしての強みを活かし、安定した品質の製品を地域のお客様に提供しています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("product/core")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/cast/core")) ?>">
               <span class="button-text">中子について詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -747,7 +767,7 @@
           <p class="works__text">
             私たちは、地元・北陸地域から発生する副生物を独自の技術で有効活用し、<br class="md-none">お客様の求める商品を生み出すことで、循環型社会の実現に貢献し続けます。
           </p>
-          <a href="<?php echo esc_url(get_post_type_archive_link('product')); ?>" class="button-container">
+          <a href="<?php echo esc_url(get_post_type_archive_link('business')); ?>" class="button-container">
             <span class="button-text">詳しく見る</span>
             <div class="button-icon">
               <span class="arrow"></span>
@@ -757,7 +777,7 @@
         </div>
         <ul class="works__list works-list">
           <li class="works-list__item">
-            <a href="<?php echo esc_url(home_url("product")) ?>">
+            <a href="<?php echo esc_url(home_url("business/chemical")) ?>">
               <div class="works-list__item-img">
                 <img src="<?php echo esc_url(get_theme_file_uri("./images/works01.webp")); ?>" alt="省略" />
               </div>
@@ -775,7 +795,7 @@
 
           </li>
           <li class="works-list__item">
-            <a href="<?php echo esc_url(home_url("product")) ?>">
+            <a href="<?php echo esc_url(home_url("business/cast")) ?>">
               <div class="works-list__item-img">
                 <img src="<?php echo esc_url(get_theme_file_uri("./images/works02.webp")); ?>" alt="省略" />
               </div>

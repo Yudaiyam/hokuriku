@@ -1,33 +1,5 @@
 <?php get_header(); ?>
-<main class=hidden-page id="single-information">
-    <!-- <section class="detail-head layout-detail-head">
-    <div class="detail-head__inner inner">
-    <div class="news-list__item-meta">
-        <time class="news-list__item-date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-            <?php
-            $categories = get_the_category();
-            if (! empty($categories)) {
-                foreach ($categories as $category) {
-                    echo '<p class="news-list__item-category">' . esc_html($category->name) . '</p>';
-                }
-            }
-            ?>
-    </div>
-    <h1 class="detail-head__title"><?php the_title(); ?></h1>
-    <div class="detail-head__img">
-        <img src="<?php the_post_thumbnail_url(); ?>" alt="">
-    </div>
-    <p class="detail-head__text"><?php the_field('business_text'); ?></p>
-    </div>
-</section>
-
-<section class="detail layout-detail">
-    <div class="detail__inner inner">
-        <div class="product-detail__contents">
-            <?php the_content(); ?>
-        </div>
-    </div>
-</section> -->
+<main class=hidden-page>
 
     <section class="detail-head layout-detail-head">
         <div class="detail-head__inner inner">

@@ -21,10 +21,10 @@
         </div>
         <div class="footer__nav-item js-top">
           <p class="footer__nav-title">
-            <a href="<?php echo esc_url(get_post_type_archive_link('business')); ?>">事業/製品紹介</a>
+            <a href="<?php echo esc_url(get_post_type_archive_link('product')); ?>">事業/製品紹介</a>
           </p>
           <ul class="footer__nav-list">
-            <li class="footer__nav-list-item"><a href="<?php echo esc_url(home_url("/product/chemical")) ?>">化成品事業</a></li>
+            <li class="footer__nav-list-item"><a href="<?php echo esc_url(home_url("/product/chemicals")) ?>">化成品事業</a></li>
             <li class="footer__nav-list-item"><a href="<?php echo esc_url(home_url("/product/cast")) ?>">鋳材事業</a></li>
             <li class="footer__nav-list-item"><a href="<?php echo esc_url(home_url("/product/analysis")) ?>">分析事業</a></li>
           </ul>

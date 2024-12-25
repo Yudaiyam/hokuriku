@@ -1,14 +1,27 @@
 <?php
 get_header();
 ?>
-<main class="hidden-page" id="archive-product">
+<main class="hidden-page">
   <section class="products-heading heading">
     <div class="heading__inner inner">
       <h1 class="heading__title">事業・製品紹介
         <span class="heading__title-sub">business&nbsp;and&nbsp;product</span>
       </h1>
-      <div class="breadcrumb">
+      <!-- <div class="breadcrumb">
         <?php custom_breadcrumb(); ?>
+      </div> -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__inner">
+          <!-- Breadcrumb NavXTで出力される部分 ここから -->
+          <?php if (function_exists('bcn_display')) { ?>
+            <div class="strength__breadcrumb">
+              <div class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+                <?php bcn_display(); ?>
+              </div>
+            </div>
+          <?php } ?>
+          <!-- Breadcrumb NavXTで出力される部分 ここまで -->
+        </div>
       </div>
     </div>
     <span class="bg-water"></span>
@@ -95,9 +108,19 @@ get_header();
               <p class="modal__title">トンネル工事</p>
               <p class="modal__place">使われている製品：ポリ塩化アルミニウム</p>
             </div>
-            <p class="modal__text">トンネル工事によって坑内湧水や、生コンの洗浄水といった多くの濁水が発生します。これら化学物質や汚れを含んだ濁水を適切に処理することは環境保全の面からとても重要となります。当社のポリ塩化アルミニウムはトンネル工事において、濁水に含まれる濁りを取り除き、排水できるようにするために使用されています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/pac")) ?>">
+            <p class="modal__text">トンネル工事によって坑内湧水や、生コンの洗浄水といった多くの濁水が発生します。これら化学物質や汚れを含んだ濁水を適切に処理することは環境保全の面からとても重要ですよね。当社のポリ塩化アルミニウムはトンネル工事において、濁水に含まれる濁りを取り除き、排水できるようにしています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
               <span class="button-text">ポリ塩化アルミニウムについて詳しくみる</span>
+              <div class="button-icon">
+                <span class="arrow"></span>
+              </div>
+            </a>
+			   <div class="modal__title-wrap">
+              <p class="modal__place">使われている製品：アルミン酸ソーダ</p>
+            </div>
+            <p class="modal__text">トンネル工事で掘り進んだ後は崩れてこない様にセメントを吹き付けて固めます。固めるには時間がかかりますが北陸化成工業所のアルミン酸ソーダを追加するとあっという間に固まりますので作業性が良くなります。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
+              <span class="button-text">アルミン酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
               </div>
@@ -125,7 +148,7 @@ get_header();
               <p class="modal__place">使われている製品：コーテッドサンド/廃砂引取り</p>
             </div>
             <p class="modal__text">フェノール樹脂でコーティングした砂で、砂型を作るための材料です。使用後は回収して再生処理を行い、再び原料として使用することができます。使用される用途に合わせて様々な種類の製品を揃えています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/rcs")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/products/cast/rcs")) ?>">
               <span class="button-text">コーテッドサンド/廃砂引取りについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -153,8 +176,8 @@ get_header();
               <p class="modal__title">浄水場</p>
               <p class="modal__place">使われている製品：ポリ塩化アルミニウム</p>
             </div>
-            <p class="modal__text">従来の凝集剤に代わる画期的な多能性無機高分子凝集剤として、経済性、作業性、凝集効果 および 各種原排水処理に対する幅広い適応性において、卓越した性能を有しています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/pac")) ?>">
+            <p class="modal__text">ポリ塩化アルミニウムは水の中に含まれる濁りを取り除くことができ、浄水場などで飲み水を作るために日本で一番幅広く使用されている凝集剤です。北陸の美味しい水道水を皆さまのご家庭にお届けするために当社の薬品が役立っています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/pac")) ?>">
               <span class="button-text">ポリ塩化アルミニウムについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -212,7 +235,7 @@ get_header();
               <p class="modal__place">使われている製品：廃砂引取り（リサイクル）</p>
             </div>
             <p class="modal__text">鋳物メーカーでは鋳造製品を製造する際に鋳物砂でできた砂型を使用します。当社では鋳物メーカーで使用された砂を回収し、再び鋳物砂として使用できるよう再生処理を行っています。</p>
-            <a class="modal__btn">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/cast/recycling-sand")) ?>">
               <span class="button-text">廃砂引取り（リサイクル）について詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -241,9 +264,19 @@ get_header();
               <p class="modal__place">使われている製品：硫酸バンド</p>
             </div>
             <p class="modal__text">紙を作るときはサイズ剤というインク滲み防止のための薬品を入れますが、それだけでは紙に定着しません。硫酸バンドを追加することで紙とサイズ剤が仲良くつながり効果が発揮されます。お客様、地域の方々、従業員とも仲良くつながっていたいですね。あと、紙を強くするために使われることもあります。</p>
-            <a class="modal__btn">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/las")) ?>">
               <span class="button-text">硫酸バンドについて詳しくみる</span>
-              <div class="button-icon" href="<?php echo esc_url(home_url("/product/las")) ?>">
+              <div class="button-icon">
+                <span class="arrow"></span>
+              </div>
+            </a>
+			  <div class="modal__title-wrap">
+              <p class="modal__place">使われている製品：ホワイトカーボン</p>
+            </div>
+            <p class="modal__text">新聞紙が軽く薄くできるのはホワイトカーボンのおかげ。北陸化成工業所の製品が余分なインクを吸収し新聞を読みやすくしています。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/las")) ?>">
+              <span class="button-text">ホワイトカーボンについて詳しくみる</span>
+              <div class="button-icon">
                 <span class="arrow"></span>
               </div>
             </a>
@@ -269,8 +302,8 @@ get_header();
               <p class="modal__title">化粧品メーカー</p>
               <p class="modal__place">使われている製品：アルミン酸ソーダ</p>
             </div>
-            <p class="modal__text">化粧品を長持ちさせる</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/alusou")) ?>">
+            <p class="modal__text">化粧品の原料の一部をコーティングして長持ちさせるのに使用されています。長く使える様になるのは使う側にとってはとてもうれしいですね。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemicals/alusou")) ?>">
               <span class="button-text">アルミン酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -357,7 +390,7 @@ get_header();
               <p class="modal__place">使われている製品：塩化アルミニウム</p>
             </div>
             <p class="modal__text">火力発電所さんで使用する石炭にフッ素が含まれてることから、廃水中にフッ素が含まれます。このまま排出することはできませんので、塩化アルミニウムがフッ素を取り込んで無害化する一役を担っています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/alcl3")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/alcl3")) ?>">
               <span class="button-text">塩化アルミニウムについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -386,7 +419,7 @@ get_header();
               <p class="modal__place">使われている製品：排水用硫酸バンド</p>
             </div>
             <p class="modal__text">北陸には様々な工場があり、様々な廃水が排出されています。工場外へ放水するためにはキレイにする必要があります。そうです、そこに北陸化成工業所の排水用硫酸バンドがお役に立っています。縁の下の力持ちです。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/las")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/las")) ?>">
               <span class="button-text">排水用硫酸バンドについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -414,8 +447,8 @@ get_header();
               <p class="modal__title">土木工事</p>
               <p class="modal__place">使われている製品：珪酸ソーダ</p>
             </div>
-            <p class="modal__text">軟弱土壌を改良し、止水、土木工事を安全に施工するための薬液</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/keisou")) ?>">
+            <p class="modal__text">工事現場において水が含まれているような軟弱土壌に中和剤と共に混ぜ込み、固化させ、工事しやすくします。水がしみ出てくるような場所でも改良を行うことで工事が行えるようになります。</p>
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/chemical/keisou")) ?>">
               <span class="button-text">珪酸ソーダについて詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -473,7 +506,7 @@ get_header();
               <p class="modal__place">使われている製品：中子</p>
             </div>
             <p class="modal__text">複雑な鋳物製品を作るためには、鋳物内部に空洞や様々な形状を作り出す必要があります。中子の原料であるレジンコーテッドサンドのメーカーとしての強みを活かし、安定した品質の製品を地域のお客様に提供しています。</p>
-            <a class="modal__btn" href="<?php echo esc_url(home_url("product/core")) ?>">
+            <a class="modal__btn" href="<?php echo esc_url(home_url("/product/cast/core")) ?>">
               <span class="button-text">中子について詳しくみる</span>
               <div class="button-icon">
                 <span class="arrow"></span>
@@ -489,41 +522,25 @@ get_header();
     <div class="division__inner inner inner--lg">
       <div class="division__head division-head">
         <h2 class="division-head__title md-dots">北陸化成工業所の3つの事業</h2>
-        <ol class="division-head__cards">
-          <?php
-          // クエリを実行して事業情報を取得
-          $business_query = new WP_Query([
+        <?php
+        // WP_Queryを使って親投稿を取得
+        $args = array(
+          'post_type'      => 'product', // カスタム投稿タイプ
+          'post_parent'    => 0, // 親投稿（親を持たない投稿のみ）
+          'posts_per_page' => -1, // 全て取得
+          'orderby'        => 'menu_order', // 必要に応じて順番を指定
+          'order'          => 'ASC'
+        );
+        $parent_posts = new WP_Query($args);
 
-            'post_type' => 'product', // カスタム投稿タイプ: business
-            'posts_per_page' => -1, // 全事業を取得
-            'orderby' => 'date', // タイトル順
-            'order' => 'ASC', // 昇順
-          ]);
-
-          $counter = 1; // カウンタの初期値設定
-
-          // ループ処理
-          if ($business_query->have_posts()) :
-            while ($business_query->have_posts()) : $business_query->the_post();
-              // 現在の事業投稿に関連する事業カテゴリーを取得
-              $categories = wp_get_post_terms(get_the_ID(), 'business-category');
-              $display = false;
-
-              // 事業カテゴリーごとのカスタムフィールド値を確認
-              foreach ($categories as $category) {
-                if (get_field('display-in-archive', 'term_' . $category->term_id)) {
-                  $display = true;
-                  break;
-                }
-              }
-
-              // 表示条件を満たしていない場合はスキップ
-              if (!$display) {
-                continue;
-              }
-          ?>
+        // ループ開始
+        if ($parent_posts->have_posts()) :
+          $counter = 1; // 数字用のカウンター
+        ?>
+          <ol class="division-head__cards">
+            <?php while ($parent_posts->have_posts()) : $parent_posts->the_post(); ?>
               <li class="division-head__card">
-                <a href="#<?php echo $counter; ?>"> <!-- 動的にカウンタ番号を付ける -->
+                <a href="#<?php echo esc_attr($counter); ?>">
                   <!-- 事業名（リンクなし） -->
                   <p class="division-head__card-title"><?php the_title(); ?></p>
                   <!-- 事業の説明 -->
@@ -531,53 +548,34 @@ get_header();
                   <span class="division-head__card-arrow"></span>
                 </a>
               </li>
-            <?php
-              $counter++; // ループが進むごとにカウンタをインクリメント
-            endwhile;
-            wp_reset_postdata(); // グローバル変数をリセット
-          else : ?>
-            <li class="division-head__card">
-              <p class="division-head__card-title">現在、事業情報はありません。</p>
-            </li>
-          <?php endif; ?>
-        </ol>
-      </div>
-      <ol class="division__list division-list" type="01">
+              <?php $counter++; // カウンターをインクリメント 
+              ?>
+            <?php endwhile; ?>
+          </ol>
         <?php
-        // 事業のクエリ
-        $business_query = new WP_Query([
-
-          'post_type' => 'product', // 事業投稿タイプ
-          'posts_per_page' => -1, // 全件取得
-          'orderby' => 'date',
-          'order' => 'ASC',
-        ]);
-
-        $counter = 1; // カウンタの初期値設定
-
-        // 事業ループ
-        if ($business_query->have_posts()) :
-          while ($business_query->have_posts()) : $business_query->the_post();
-            // 現在の事業投稿に関連する事業カテゴリーを取得
-            $categories = wp_get_post_terms(get_the_ID(), 'business-category');
-            $display = false;
-
-            // 事業カテゴリーごとのカスタムフィールド値を確認
-            foreach ($categories as $category) {
-              if (get_field('display-in-archive', 'term_' . $category->term_id)) {
-                $display = true;
-                break;
-              }
-            }
-
-            // 表示条件を満たしていない場合はスキップ
-            if (!$display) {
-              continue;
-            }
-
-            $business_id = get_the_ID(); // 現在の事業ID
+        endif;
+        // WP_Query後のリセット
+        wp_reset_postdata();
         ?>
-            <li class="division-list__item" id="<?php echo $counter; ?>"> <!-- 動的にIDを付与 -->
+      </div>
+      <?php
+      // WP_Queryを使って親投稿を取得
+      $args = array(
+        'post_type'      => 'product', // カスタム投稿タイプ
+        'post_parent'    => 0, // 親投稿（親を持たない投稿のみ）
+        'posts_per_page' => -1, // 全て取得
+        'orderby'        => 'menu_order', // 必要に応じて順番を指定
+        'order'          => 'ASC'
+      );
+      $parent_posts = new WP_Query($args);
+
+      // ループ開始
+      if ($parent_posts->have_posts()) :
+        $counter = 1; // 数字用のカウンター
+      ?>
+        <ol class="division__list division-list" type="01">
+          <?php while ($parent_posts->have_posts()) : $parent_posts->the_post(); ?>
+            <li class="division-list__item" id="<?php echo esc_attr($counter); ?>"> <!-- 動的にIDを付与 -->
               <div class="division-list__tops">
                 <div class="division-list__tops-contents">
                   <!-- 事業名 -->
@@ -603,74 +601,62 @@ get_header();
                   <?php endif; ?>
                 </div>
               </div>
-
-
               <ul class="division-list__products">
                 <?php
-                $excluded_slug = 'customize-2';
-                // 紐付いた製品を取得
-                $related_products = new WP_Query([
-                  'post_type' => 'goods', // 製品投稿タイプ
-                  'posts_per_page' => -1,
-                  'tax_query' => [
-                    [
-                      'taxonomy' => 'business-category', // 事業カテゴリータクソノミー
-                      'field' => 'term_id',
-                      'terms' => wp_get_post_terms($business_id, 'business-category', ['fields' => 'ids']),
-                    ],
-                  ],
-                  'post__not_in' => get_posts([
-                        'post_type' => 'goods', /////
-                        'posts_per_page' => -1,
-                        'name' => $excluded_slug, // スラッグで指定
-                        'fields' => 'ids',
-                    ]),
-                ]);
+                // 除外したい子投稿のIDを指定
+                $excluded_posts = array(869); // 除外する子投稿のIDを配列で指定
+                // 子投稿を取得
+                $child_args = array(
+                  'post_type'      => 'product', // カスタム投稿タイプ
+                  'post_parent'    => get_the_ID(), // 現在の親投稿を指定
+                  'post__not_in'   => $excluded_posts, // 除外する投稿IDを指定
+                  'posts_per_page' => -1, // 全て取得
+                  'orderby'        => 'menu_order', // 必要に応じて順番を指定
+                  'order'          => 'ASC'
+                );
+                $child_posts = new WP_Query($child_args);
 
-                // 製品ループ
-                if ($related_products->have_posts()) :
-                  while ($related_products->have_posts()) : $related_products->the_post();
-                    $product_slug = get_post_field('post_name', get_the_ID());
-                    if ($product_slug === 'customize') {
-                      continue;
-                    }
-                ?>
+                // 子投稿のループ
+                if ($child_posts->have_posts()) :
+                  while ($child_posts->have_posts()) : $child_posts->the_post(); ?>
                     <li class="division-list__products-item">
                       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </li>
                   <?php endwhile;
-                  wp_reset_postdata(); // 製品クエリのリセット
+                  wp_reset_postdata(); // 子投稿のクエリをリセット
                 else : ?>
-                  <li class="division-list__products-item">関連する製品がありません。</li>
+                  <li class="division-list__products-item">子投稿がありません。</li>
                 <?php endif; ?>
-                <span class="business-bg" id="business-bg-<?php echo $counter; ?>"></span>
+                <span class="business-bg" id="business-bg-<?php echo esc_attr($counter); ?>"></span>
               </ul>
             </li>
-        <?php
-            $counter++; // ループが進むごとにカウンタをインクリメント
-          endwhile;
-          wp_reset_postdata(); // 事業クエリのリセット
-        endif; ?>
+            <?php $counter++; // カウンターをインクリメント
+            ?>
+          <?php endwhile; ?>
+        </ol>
+      <?php
+      endif;
 
-      </ol>
+      // WP_Query後のリセット
+      wp_reset_postdata();
+      ?>
+
     </div>
-    <span class="division__bg-left"></span>
-    <span class="division__bg-right"></span>
   </section>
-  
-  <a class="customize layout-customize layout-customize--single-business" href="<?php echo esc_url(home_url("/goods/customize-2")) ?>">
+
+  <div class="customize layout-customize layout-customize--single-business ">
     <div class="customize__inner inner">
       <div class="customize__contents-wrap">
         <div class="customize__contents">
           <p class="customize__title">カスタマイズ製品</p>
           <p class="customize__text">お客様の悩み事から当社独自のカスタマイズ製品もご提供可能でございます。</p>
           <div class="customize__btn">
-            <span class="button-container">
+            <a class="button-container" href="<?php echo esc_url(home_url("/product/customize")) ?>">
               <span class="button-text">詳しく見る</span>
               <div class="button-icon">
                 <span class="arrow"></span>
               </div>
-            </span>
+            </a>
           </div>
         </div>
         <div class="customize__img">
@@ -679,7 +665,7 @@ get_header();
       </div>
     </div>
 
-  </a>
+  </div>
   <?php get_template_part('template-parts/recruit'); ?>
   <?php get_template_part('template-parts/contact'); ?>
   <?php get_template_part('template-parts/banner'); ?>

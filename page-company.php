@@ -3,7 +3,7 @@
     <div class="company-heading heading">
         <div class="heading__inner inner">
             <h1 class="heading__title">会社案内<?php the_field('number-of-businesses'); ?>
-                <span class="heading__title-sub"><span class="md-capital">company</span></span>
+                <span class="heading__title-sub"><span class="md-capital">company</span>
             </h1>
             <div class="breadcrumb">
                 <div class="breadcrumb__inner">
@@ -19,8 +19,6 @@
                 </div>
             </div>
         </div>
-		<span class="treat bg-water"></span>
-      <span class="treat bg-water2"></span>
     </div>
 
 
@@ -97,55 +95,17 @@
             <div class="company-massage__contents">
                 <div class="company-massage__content-title-wrap">
                     <h3 class="company-massage__contents-title">工業用薬品の製造を通じて<br>地域に貢献できる企業であり続ける</h3>
-                    <p class="company-massage__contents-name">代表取締役社長<span
-                            class="md-none">&emsp;</span><span>中山&nbsp;浩光</span></p>
+                    <p class="company-massage__contents-name">代表取締役社長<span class="md-none">&emsp;</span><span>中山&nbsp;浩光</span></p>
                 </div><br>
                 <div class="company-massage__content-text-wrap">
-                    <h3 class="company-massage__contents-text">「工業用薬品の製造を通じて地域に貢献できる企業でありたい」<br
-                            class="md-none">昭和24年以来、私たちはそう願いながら<br class="md-none">今日まで企業活動を続けてきました。</h3>
-                    <h3 class="company-massage__contents-text">当社は
-                        水処理凝集剤・水ガラスといった工業用薬品事業に始まり、鋳物向け資材事業、発泡スチロール事業を加えた3本柱で、<br>北陸に密着して事業を展開しています。</h3>
-                    <h3 class="company-massage__contents-text">
-                        これから益々多様化するお客様のニーズにしっかりとお応えするべく、品質はもちろん、安定供給体制の構築、コスト低減活動に日々精進し、地域に貢献できるよう従業員ともども努力していく所存です。
-                    </h3>
+                    <h3 class="company-massage__contents-text">「工業用薬品の製造を通じて地域に貢献できる企業でありたい」<br class="md-none">昭和24年以来、私たちはそう願いながら<br class="md-none">今日まで企業活動を続けてきました。</h3>
+                    <h3 class="company-massage__contents-text">当社は 水処理凝集剤・水ガラスといった工業用薬品事業に始まり、鋳物向け資材事業、発泡スチロール事業を加えた3本柱で、<br>北陸に密着して事業を展開しています。</h3>
+                    <h3 class="company-massage__contents-text">これから益々多様化するお客様のニーズにしっかりとお応えするべく、品質はもちろん、安定供給体制の構築、コスト低減活動に日々精進し、地域に貢献できるよう従業員ともども努力していく所存です。</h3>
                     <h3 class="company-massage__contents-text">今後ともご支援、ご指導を賜りますようよろしくお願い申し上げます。</h3>
                 </div>
             </div>
         </div>
     </section>
-	
-  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" style="margin-bottom: -7px; vertical-align: middle;">
-    <style>
-      .path-0 {
-        animation: pathAnim-0 15s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes pathAnim-0 {
-        0% {
-          d: path("M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        25% {
-          d: path("M 0,400 L 0,150 C 148.57142857142856,128.46428571428572 297.1428571428571,106.92857142857142 405,130 C 512.8571428571429,153.07142857142858 580.0000000000001,220.75000000000003 680,215 C 779.9999999999999,209.24999999999997 912.8571428571429,130.07142857142856 1045,107 C 1177.142857142857,83.92857142857143 1308.5714285714284,116.96428571428572 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        50% {
-          d: path("M 0,400 L 0,150 C 140.28571428571428,160.82142857142856 280.57142857142856,171.64285714285714 401,169 C 521.4285714285714,166.35714285714286 621.9999999999999,150.25 729,162 C 836.0000000000001,173.75 949.4285714285716,213.35714285714286 1069,216 C 1188.5714285714284,218.64285714285714 1314.2857142857142,184.32142857142856 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        75% {
-          d: path("M 0,400 L 0,150 C 114.85714285714286,126.60714285714286 229.71428571428572,103.21428571428571 360,108 C 490.2857142857143,112.78571428571429 636,145.75 762,143 C 888,140.25 994.2857142857142,101.78571428571429 1104,97 C 1213.7142857142858,92.21428571428571 1326.857142857143,121.10714285714286 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        100% {
-          d: path("M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z");
-        }
-      }
-    </style>
-    <path d="M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#F0FAFB" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-  </svg>
     <section class="company-vision layout-company-vision js-top" id="vision">
         <div class="company-vision__inner inner">
             <h2 class="company-vision__title sub-title md-dots">企業理念</h2>
@@ -187,42 +147,7 @@
                 </ul>
             </div>
         </div>
-        <span class="bg-ball"></span>
-        <span class="bg-water"></span>
     </section>
-	
-  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" style="margin-bottom: -7px; vertical-align: middle; transform: rotate(180deg);">
-    <style>
-      .path-0 {
-        animation: pathAnim-0 15s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes pathAnim-0 {
-        0% {
-          d: path("M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        25% {
-          d: path("M 0,400 L 0,150 C 148.57142857142856,128.46428571428572 297.1428571428571,106.92857142857142 405,130 C 512.8571428571429,153.07142857142858 580.0000000000001,220.75000000000003 680,215 C 779.9999999999999,209.24999999999997 912.8571428571429,130.07142857142856 1045,107 C 1177.142857142857,83.92857142857143 1308.5714285714284,116.96428571428572 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        50% {
-          d: path("M 0,400 L 0,150 C 140.28571428571428,160.82142857142856 280.57142857142856,171.64285714285714 401,169 C 521.4285714285714,166.35714285714286 621.9999999999999,150.25 729,162 C 836.0000000000001,173.75 949.4285714285716,213.35714285714286 1069,216 C 1188.5714285714284,218.64285714285714 1314.2857142857142,184.32142857142856 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        75% {
-          d: path("M 0,400 L 0,150 C 114.85714285714286,126.60714285714286 229.71428571428572,103.21428571428571 360,108 C 490.2857142857143,112.78571428571429 636,145.75 762,143 C 888,140.25 994.2857142857142,101.78571428571429 1104,97 C 1213.7142857142858,92.21428571428571 1326.857142857143,121.10714285714286 1440,150 L 1440,400 L 0,400 Z");
-        }
-
-        100% {
-          d: path("M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z");
-        }
-      }
-    </style>
-    <path d="M 0,400 L 0,150 C 87.39285714285714,118.10714285714286 174.78571428571428,86.21428571428571 295,83 C 415.2142857142857,79.78571428571429 568.2499999999999,105.25 713,129 C 857.7500000000001,152.75 994.2142857142858,174.7857142857143 1114,178 C 1233.7857142857142,181.2142857142857 1336.892857142857,165.60714285714283 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#F0FAFB" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-  </svg>
 
     <section class="company layout-company js-top" id="about">
         <div class="company__inner inner">
@@ -297,8 +222,6 @@
                 </div>
             </div>
         </div>
-        <span class="bg-water3"></span>
-        <span class="bg-water4"></span>
     </section>
 
     <section class="company-organization layout-company-organization js-top" id="organization">
@@ -325,7 +248,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section class="company-access layout-company-access js-top" id="access">
@@ -339,8 +261,7 @@
                     <span class="company-access__how">電車の場合</span>
                     <p class="company-access__text">高岡駅 もしくは 新高岡駅より、タクシーで 約15分</p>
                     <span class="company-access__how">自動車の場合</span>
-                    <p class="company-access__text">
-                        高岡IC（金沢市）方面よりお越しの方は、下田交差点前の分岐を左にお進みください。小杉IC（富山市）方面よりお越しの方は、高新大橋を渡ってすぐの分岐を左にお進みください。</p>
+                    <p class="company-access__text">高岡IC（金沢市）方面よりお越しの方は、下田交差点前の分岐を左にお進みください。小杉IC（富山市）方面よりお越しの方は、高新大橋を渡ってすぐの分岐を左にお進みください。</p>
                     <div class="company-access__btn">
                         <a class="button-container">
                             <span class="button-text">google&nbsp;mapを見る</span>
@@ -357,24 +278,20 @@
                         <div class="tab__menu-wrap">
                             <p class="tab__menu-title">本社工場&nbsp;周辺地図</p>
                             <ul class="tab__menu">
-                                <li class="tab__menu-item js-tab-menu is-active" data-number="tab01"><span>金沢方面より</span>
-                                </li>
+                                <li class="tab__menu-item js-tab-menu is-active" data-number="tab01"><span>金沢方面より</span></li>
                                 <li class="tab__menu-item js-tab-menu" data-number="tab02"><span>富山方面より</span></li>
                                 <li class="tab__menu-item js-tab-menu" data-number="tab03"><span>岐阜方面より</span></li>
                             </ul>
                         </div>
                         <ul class="tab__content">
                             <li id="tab01" class="tab__content-item js-tab-content is-active">
-                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access01.jpg")); ?>"
-                                    alt="省略" />
+                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access01.jpg")); ?>" alt="省略" />
                             </li>
                             <li id="tab02" class="tab__content-item js-tab-content">
-                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access02.jpg")); ?>"
-                                    alt="省略" />
+                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access02.jpg")); ?>" alt="省略" />
                             </li>
                             <li id="tab03" class="tab__content-item js-tab-content">
-                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access03.jpg")); ?>"
-                                    alt="省略" />
+                                <img src="<?php echo esc_url(get_theme_file_uri("./images/access03.jpg")); ?>" alt="省略" />
                             </li>
                         </ul>
 
@@ -382,24 +299,20 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
 
     <div class="container container--history">
         <div class="wave"></div>
     </div>
-
     <section class="company-history layout-company-history" id="history">
-    <span class="bg-water"></span>
         <div class="company-history__inner inner">
             <h2 class="company-history__title sub-title md-dots">沿革</h2>
-            <p class="company-history__text">当社は1949年に設立以来、工業薬品メーカーとして地元に根差した企業活動を行ってきました。<br>
+            <p class="company-history__text">当社は1941年に設立以来、工業薬品メーカーとして地元に根差した企業活動を行ってきました。<br>
                 設立から現在まで築いてきた北陸化成工業所の歩みをご紹介します。</p>
-            
-        </div>
-        <div class="service__swiper history-swiper">
-                <div class="price__table-wrapper">
+            <!-- ここからスワイパー -->
+            <div class="service__swiper history-swiper">
+                <div class="swiper js-history-swiper">
                     <ul class="swiper-wrapper company-history__list">
                         <li class="swiper-slide">
                             <div class="company-history__item">
@@ -609,16 +522,11 @@
                         </li>
                     </ul>
                 </div>
+                <div class="swiper-scrollbar-wrapper">
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
-        <script>
-            const tableWrapper = document.querySelector('.price__table-wrapper');
-            if (tableWrapper) {
-                new SimpleBar(tableWrapper, {
-                    autoHide: false,
-                    clickOnTrack: false,
-                });
-            }
-        </script>
+        </div>
     </section>
 
     <section class="company-plan layout-company-plan js-top" id="plan">
@@ -626,7 +534,7 @@
             <h2 class="company-plan__title sub-title md-dots">一般事業主行動計画</h2>
             <p class="company-plan__text">北陸化成工業所は、改正次世代育成支援対策推進法に基づき「一般事業主行動計画」を策定・公表しています。</p>
             <div class="company-plan__btn">
-                <a class="button-container" href="">
+                <a class="button-container">
                     <span class="button-text">一般事業主行動計画を見る</span>
                     <div class="button-icon">
                         <span class="arrow"></span>
@@ -634,7 +542,6 @@
                 </a>
             </div>
         </div>
-        <span class="bg-water5"></span>
     </section>
 
 
@@ -648,8 +555,7 @@
                             <img src="<?php echo esc_url(get_theme_file_uri("./images/link01.svg")); ?>" alt="省略" />
                         </div>
                         <h3 class="company-group__title">スチロ化学工業株式会社</h3>
-                        <p class="company-group__text">お客様の製品の品質、安全をお守りする為の梱包資材に関するお悩み、部品の軽量化のお悩みは
-                            ありませんか？私たちは、発泡性プラスチック製品を中心に ご提案いたします。まずは、お気軽に ひと声おかけください。</p>
+                        <p class="company-group__text">お客様の製品の品質、安全をお守りする為の梱包資材に関するお悩み、部品の軽量化のお悩みは ありませんか？私たちは、発泡性プラスチック製品を中心に ご提案いたします。まずは、お気軽に ひと声おかけください。</p>
                         <div class="company__profile company-profile company-profile--group">
                             <dl class="company-profile__list">
                                 <dt class="company-profile__term">所在地</dt>
@@ -662,8 +568,7 @@
                             <dl class="company-profile__list">
                                 <dt class="company-profile__term">営業品目</dt>
                                 <dd class="company-profile__description">
-                                    <p>発泡スチロール（高倍・低倍成形品、切断・加工品）、魚箱、各種容器、園芸用品、緩衝材、断熱材、ロボットトレイ、構造部品、EPS土木工法、EPS鋳造法、木型用材
-                                    </p>
+                                    <p>発泡スチロール（高倍・低倍成形品、切断・加工品）、魚箱、各種容器、園芸用品、緩衝材、断熱材、ロボットトレイ、構造部品、EPS土木工法、EPS鋳造法、木型用材</p>
                                     <p>発泡ポリエチレン、発泡ポリプロピレン緩衝材、断熱材</p>
                                     <p>押し出し発泡ポリスチレン断熱材、ディスプレー材</p>
                                     <p>その他 発泡プラスチック全般</p>
@@ -671,12 +576,10 @@
                             </dl>
                             <dl class="company-profile__list">
                                 <dt class="company-profile__term">ホームページ</dt>
-                                <dd class="company-profile__description"><a href="https://suchiro.jp" target="_blank"
-                                        rel="noopener noreferrer">https://suchiro.jp</a>
+                                <dd class="company-profile__description"><a href="https://suchiro.jp" target="_blank" rel="noopener noreferrer">https://suchiro.jp</a>
                                 </dd>
                             </dl>
                         </div>
-                    </div>
                 </li>
                 <li class="company-group__content">
                     <div class="company-group__content-inner">
@@ -684,10 +587,7 @@
                             <img src="<?php echo esc_url(get_theme_file_uri("./images/link02.svg")); ?>" alt="省略" />
                         </div>
                         <h3 class="company-group__title">ケミプラス株式会社</h3>
-                        <p class="company-group__text">お客様のニーズに
-                            すばやく対応し、より信頼頂けるサービス、より迅速な輸送の提供、より密接なコミュニケーションを目指し、満足度の高いサービスを ご提供します。
-                            ありませんか？私たちは、発泡性プラスチック製品を中心に ご提案いたします。まずは、お気軽に ひと声おかけください。
-                        </p>
+                        <p class="company-group__text">お客様のニーズに すばやく対応し、より信頼頂けるサービス、より迅速な輸送の提供、より密接なコミュニケーションを目指し、満足度の高いサービスを ご提供します。 ありませんか？私たちは、発泡性プラスチック製品を中心に ご提案いたします。まずは、お気軽に ひと声おかけください。</p>
                         <div class="company__profile company-profile company-profile--group">
                             <dl class="company-profile__list">
                                 <dt class="company-profile__term">所在地</dt>
@@ -710,188 +610,16 @@
                             </dl>
                             <dl class="company-profile__list">
                                 <dt class="company-profile__term">ホームページ</dt>
-                                <dd class="company-profile__description"><a href="https://chemiplus.jp" target="_blank"
-                                        rel="noopener noreferrer">https://chemiplus.jp</a>
+                                <dd class="company-profile__description"><a href="https://chemiplus.jp" target="_blank" rel="noopener noreferrer">https://chemiplus.jp</a>
                                 </dd>
                             </dl>
                         </div>
-                    </div>
                 </li>
             </ul>
         </div>
-        <span class="bg-ball"></span>
-        <span class="bg-water"></span>
     </section>
     <?php get_template_part('template-parts/recruit'); ?>
     <?php get_template_part('template-parts/contact'); ?>
     <?php get_template_part('template-parts/banner'); ?>
 </main>
 <?php get_footer(); ?>
-
-<style>
-    /* スクロールバーのスタイル */
-    .price__table-wrapper .simplebar-scrollbar {
-        width: 80px !important;
-    }
-
-    .price__table-wrapper .simplebar-scrollbar::before {
-        position: absolute !important;
-        content: '' !important;
-        width: 80px !important;
-        height: 80px !important;
-
-        border-radius: 4px !important;
-        opacity: 1 !important;
-        left: 0 !important;
-        right: 0 !important;
-        top: 0 !important;
-        bottom: auto !important;
-        transform: none !important;
-        background-color: transparent !important;
-
-        background-repeat: no-repeat !important;
-        background-position: center !important;
-        background-size: cover !important;
-
-        @media screen and (max-width: 767px) {
-            width: 60px !important;
-            height: 60px !important;
-        }
-
-    }
-
-    .price__table-wrapper .simplebar-scrollbar::before:hover {
-        cursor: grab;
-    }
-
-
-    .price__table-wrapper .simplebar-track.simplebar-horizontal {
-        height: 84px !important;
-        background-color: #f9f9f9;
-
-        border-radius: 4px !important;
-        margin: 20px 0 !important;
-    }
-
-    /* スクロール可能なエリアのスタイル */
-    .price__table-wrapper {
-        margin: 0 auto;
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .price__table-wrapper .simplebar-content-wrapper {
-        overflow-x: auto;
-    }
-
-    .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-        right: auto;
-        left: 0;
-        top: 2px;
-        height: 80px;
-        min-height: 0;
-        min-width: 10px;
-        width: auto;
-    }
-
-    .simplebar-track.simplebar-horizontal {
-        background-color: #fff;
-        position: relative;
-    }
-
-    .simplebar-track.simplebar-horizontal::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        width: 85%;
-        transform: translateX(-50%);
-        height: 2px;
-        background-color: #BBBBBB;
-        z-index: -1;
-    }
-
-    .simplebar-scrollbar:before {
-        position: absolute;
-        content: '';
-        border-radius: 7px;
-        left: 2px;
-        right: 2px;
-        opacity: 0;
-
-    }
-
-    .company-history__list {
-        background-color: #fff;
-
-        margin-top: 4rem;
-    }
-
-    .company-history__list {
-        background-color: #FFFFFF;
-    }
-
-    .simplebar-content-wrapper {
-        background-color: #fff;
-    }
-
-    .service__swiper.history-swiper {
-        margin-top: 4rem !important;
-    }
-
-    .company-history__item::before {
-        content: "";
-        position: absolute;
-        height: 10.9375rem;
-        width: 0.125rem;
-        background-color: #f5f5f5;
-        right: 0%;
-    }
-    @media screen and (max-width: 767px) {
-    .company-history__text {
-        margin-top: 0.625rem;
-        font-size: 14px;
-    }
-    .company-history__list {
-        background-color: #fff;
-        margin-top: 1.5rem;
-    }
-    .price__table-wrapper .simplebar-track.simplebar-horizontal{
-        margin: 0!important;
-    }
-    .simplebar-track.simplebar-horizontal::after {
-        content: '';
-        position: absolute;
-        top: 37%;
-        left: 47%;
-        width: 85%;
-        transform: translate(-50%);
-        height: 2px;
-        background-color: #BBBBBB;
-        z-index: -1;
-    }
-    .price__table-wrapper {
-        margin: 0 auto;
-        max-width: 100%;
-        padding: 0 0 0 20px;
-    }
-}
-
-.simplebar-track.simplebar-vertical {
-    display: none!important;
-}
-</style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const tableWrapper = document.querySelector('.price__table-wrapper');
-        if (tableWrapper) {
-            new SimpleBar(tableWrapper, {
-                autoHide: false,
-                clickOnTrack: false,
-                direction: 'rtl'
-
-            });
-        }
-    });
-</script>
